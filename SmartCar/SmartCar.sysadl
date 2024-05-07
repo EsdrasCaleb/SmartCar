@@ -6,26 +6,26 @@ package SysADL.types {
 	value type Void { } 
 	value type Real { }
 } 
-Requirement temSensorMotor ( 1.3 ) { 
+Requirement motorTempSensorFR ( 1.3 ) { 
 	text = "O sensor deve monitorar continuamente a temperatura e detectar quando excede 100 graus celsius"
-derive statusDisplay , beepAlarm , AutoTurnOff ; } 
-Requirement motorControl ( 1 ) { 
+derive statusDisplayFR , beepAlarmFR , AutoTurnOffFR ; } 
+Requirement motorControlFR ( 1 ) { 
 	text = "Capacidade de Ligar e Desligar o Motor"
-} Requirement fuelSensor ( 1.2.1 ) { 
+} Requirement fuelSensorFR ( 1.2.1 ) { 
 	text = "Monitora a quantidade de combustivel e detecta se está abaixo de 2 litros"
-derive AutoTurnOff , statusDisplay , beepAlarm ; } 
-Requirement baterySensor ( 2.1 ) { 
+derive AutoTurnOffFR , statusDisplayFR , beepAlarmFR ; } 
+Requirement baterySensorFR ( 2.1 ) { 
 	text = "Acompanha a carga da bateria e identifica quando está abaixo de 20%" 
-	derive statusDisplay ;
+	derive statusDisplayFR ;
 } 
-Requirement statusDisplay ( 2 ) { text = "Avisa visualmente o motorista com alertas visuais e auditivos" } 
-Requirement motorActivation ( 1.1 ) { 
+Requirement statusDisplayFR ( 2 ) { text = "Avisa visualmente o motorista com alertas visuais e auditivos" } 
+Requirement engineActivationDeviceFR ( 1.1 ) { 
 	text = "Dispositivo acionado pelo usuário para ligar o motor" 
-	derive motorControl ;
+	derive motorControlFR ;
 } 
  
-Requirement AutoTurnOff ( 1.2 ) { 
+Requirement AutoTurnOffFR ( 1.2 ) { 
 	text = "Desligar o motor se uma das condições energenciais forem satisfeitas por 2 minutos continuos"
-	derive motorControl ;
+	derive motorControlFR ;
 } 
-Requirement beepAlarm ( 3 ) { text = "Faz um barulho para alertar o usuário" }
+Requirement beepAlarmFR ( 3 ) { text = "Faz um barulho para alertar o usuário" }
