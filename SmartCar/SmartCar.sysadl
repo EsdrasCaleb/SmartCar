@@ -8,25 +8,24 @@ package SysADL.types {
 } 
 Requirement temSensorMotor ( 1.3 ) { 
 	text = "O sensor deve monitorar continuamente a temperatura e detectar quando excede 100 graus celsius"
-derive motorControl , statusDisplay ; } 
+derive statusDisplay , beepAlarm , AutoTurnOff ; } 
 Requirement motorControl ( 1 ) { 
 	text = "Capacidade de Ligar e Desligar o Motor"
 } Requirement fuelSensor ( 1.2.1 ) { 
 	text = "Monitora a quantidade de combustivel e detecta se está abaixo de 2 litros"
-derive AutoTurnOffFuel , aleretInsuficientFuel ; } 
+derive AutoTurnOff , statusDisplay , beepAlarm ; } 
 Requirement baterySensor ( 2.1 ) { 
 	text = "Acompanha a carga da bateria e identifica quando está abaixo de 20%" 
 	derive statusDisplay ;
 } 
-Requirement statusDisplay ( 2 ) { text = "Avisa o motorista com alertas visuais e auditivos" } 
+Requirement statusDisplay ( 2 ) { text = "Avisa visualmente o motorista com alertas visuais e auditivos" } 
 Requirement motorActivation ( 1.1 ) { 
 	text = "Dispositivo acionado pelo usuário para ligar o motor" 
 	derive motorControl ;
 } 
-Requirement aleretInsuficientFuel ( 1.2.2 ) { 
-	text = "Alertar Usuário que Tem combustivel abaixo de 2 litros"
-derive statusDisplay ; } 
-Requirement AutoTurnOffFuel ( 1.2 ) { 
-	text = "Desligar o motor caso o combustivel abaixo de 2 litros"
+ 
+Requirement AutoTurnOff ( 1.2 ) { 
+	text = "Desligar o motor se uma das condições energenciais forem satisfeitas por 2 minutos continuos"
 	derive motorControl ;
-}
+} 
+Requirement beepAlarm ( 3 ) { text = "Faz um barulho para alertar o usuário" }
