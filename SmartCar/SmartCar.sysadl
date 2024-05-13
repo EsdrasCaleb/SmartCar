@@ -8,16 +8,15 @@ package SysADL.types {
 } 
 Requirement motorTempSensorFR ( 1.3 ) { 
 	text = "O sensor deve monitorar continuamente a temperatura e detectar quando excede 100 graus celsius"
-derive statusDisplayFR , beepAlarmFR , AutoTurnOffFR ; } 
+derive statusDisplayFR , beepAlarmFR , AutoTurnOffFR , sensorPerformanceNFR ; } 
 Requirement motorControlFR ( 1 ) { 
 	text = "Capacidade de Ligar e Desligar o Motor"
 } Requirement fuelSensorFR ( 1.2.1 ) { 
 	text = "Monitora a quantidade de combustivel e detecta se está abaixo de 2 litros"
-derive AutoTurnOffFR , statusDisplayFR , beepAlarmFR ; } 
+derive AutoTurnOffFR , statusDisplayFR , beepAlarmFR , sensorPerformanceNFR ; } 
 Requirement baterySensorFR ( 2.1 ) { 
 	text = "Acompanha a carga da bateria e identifica quando está abaixo de 20%" 
-	derive statusDisplayFR ;
-} 
+	derive statusDisplayFR , sensorPerformanceNFR ; } 
 Requirement statusDisplayFR ( 2 ) { text = "Avisa visualmente o motorista com alertas visuais e auditivos" } 
 Requirement engineActivationDeviceFR ( 1.1 ) { 
 	text = "Dispositivo acionado pelo usuário para ligar o motor" 
@@ -28,4 +27,4 @@ Requirement AutoTurnOffFR ( 1.2 ) {
 	text = "Desligar o motor se uma das condições energenciais forem satisfeitas por 2 minutos continuos"
 	derive motorControlFR ;
 } 
-Requirement beepAlarmFR ( 3 ) { text = "Faz um barulho para alertar o usuário" }
+Requirement beepAlarmFR ( 3 ) { text = "Faz um barulho para alertar o usuário" } Requirement sensorPerformanceNFR ( 3.0 ) { text = "Os sensores devem ter uma resposta atualização de estado de no máximo 2 segundos" } Requirement alarmPerformanceNFT ( 3.1 ) { derive beepAlarmFR , statusDisplayFR ; } Requirement compatibilityNFR ( 3.2 ) { text = "O sistema deve ser capaz de ser conectado em diferentes veículos independente do fabricante." } Requirement upgradabilityNFR ( 3.3 ) { text = "O sistema deve ser suportar updates de firmware para possíveis correções no software em casos de necessidade." } Requirement failureDetectionNFT ( 3.4 ) { text = "O sistema deve detectar caso algum sensor ou componente esteja apresentando falhas. E exibir elas ao usuário no status display." derive statusDisplayFR ; } Requirement securityNFR ( 3.5 ) { text = "O sistema deve bloquear acessos indevidos ao sistema e modificações nos componentes dele. Toda a comunicação de não críticos (não provenientes diretamente do sensor) deve ser criptografada." }
