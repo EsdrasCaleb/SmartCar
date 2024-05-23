@@ -52,19 +52,19 @@ Requirement securityNFR ( 3.5 ) {
 	import SysADL.types ; 
 	value type celciusTemp extends SysADL.types.Real { } 
 	value type liters extends SysADL.types.Real { } 
-	value type percent extends SysADL.types.Real { } value type enumOnOff extends SysADL.types.Boolean { dimension = encryptedData } dimension encryptedData value type comunicationDisplayData { dimension = encryptedData } value type criticalAlert extends SysADL.types.Boolean { dimension = encryptedData } value type noSignalAlert extends SysADL.types.Boolean { dimension = encryptedData }
-} package scComponents { import SysADL.types ; import ports ; import scPorts ;
-	component def displayControllerCP { ports : newPort : displaDataIPT ; newPort : alertPortIPT ; configuration { } }
+	value type percent extends SysADL.types.Real { }   value type eLiters extends liters { } value type criticalAlert extends SysADL.types.Boolean { } value type noSignalAlert extends SysADL.types.Boolean { } enum onOff { On , Off } datatype onOffData { attributes : ^type : onOff ; } value type encriptationKey { } value type byteStream { } datatype encryptedLiters { attributes : key : encriptationKey ; ^value : eLiters ; } datatype encryptedTemp { } datatype encryptedPorcent { } } package scComponents { import SysADL.types ; import ports ; import scPorts ;
+	component def displayControllerCP { ports :  portaAlerta : alertPortIPT ; configuration { } }
 	component def tempSensorControlerCP { ports : newPort : alertPortOPT ; }
 	component def fuelSensorControlerCP { ports : newPort : alertPortOPT ; }
 	component def baterySensorControlerCP { ports : newPort : alertPortOPT ; } boundary
 	component def baterySensorCP { ports : newPort : baterySensorOPT ; } boundary
 	component def fuelSensorCP { ports : newPort : fuelSensorOPT ; } boundary
 	component def engineTempSensorCP { ports : newPort : mortorSensorOPT ; }
-	component def beepControllerCP { ports : newPort : alertPortIPT ; }
-	component def engineShoutDownCP { ports : tempSensorAlert : alertPortIPT ; fuelSensorAlert : alertPortIPT ; }
-	component def engineCP { ports : newPort : engineActivationIPT ; } } 
+	component def beepControllerCP { ports : newPort : alertPortIPT [ 1 , 2 ] ; }
+	component def engineShoutDownCP { ports : tempSensorAlert : alertPortIPT ; fuelSensorAlert : alertPortIPT ; alertOut : alertPortOPT ; }
+	component def engineCP { ports : newPort : engineActivationIPT ; } boundary
+	component def inginitionCP { } } 
 	package scPorts { import SysADL.types ; 
 		import dataTypes ; 
-		port def mortorSensorOPT { flow out celciusTemp } port def fuelSensorOPT { flow out liters } port def baterySensorOPT { flow in percent } port def engineActivationIPT { flow in enumOnOff }
-	port def displaDataIPT { flow in comunicationDisplayData } port def alertPortIPT { flow in criticalAlert } port def alertPortOPT { flow out criticalAlert } }
+		port def mortorSensorOPT { flow out celciusTemp } port def fuelSensorOPT { flow out liters } port def baterySensorOPT { flow in percent } port def engineActivationIPT { flow in onOffData }
+	 port def alertPortIPT { flow in criticalAlert } port def alertPortOPT { flow out criticalAlert } }

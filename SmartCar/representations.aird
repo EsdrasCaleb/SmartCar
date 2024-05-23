@@ -56,17 +56,21 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.Package']"/>
         <target xmi:type="sysadl:Model" href="SmartCar.sysadl#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IDdR4BOBEe-W8ZKxE9676w" name="smartCarDataTypes" repPath="#_IDZngBOBEe-W8ZKxE9676w" changeId="1715864684751">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_IDdR4BOBEe-W8ZKxE9676w" name="smartCarDataTypes" repPath="#_IDZngBOBEe-W8ZKxE9676w" changeId="1716464611505">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']"/>
         <target xmi:type="sysadl:Package" href="SmartCar.sysadl#//@packages[name='dataTypes']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_WfmyYBOBEe-W8ZKxE9676w" name="compDiagram" repPath="#_WflkQBOBEe-W8ZKxE9676w" changeId="1715866142377">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_WfmyYBOBEe-W8ZKxE9676w" name="compDiagram" repPath="#_WflkQBOBEe-W8ZKxE9676w" changeId="1716466434066">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']"/>
         <target xmi:type="sysadl:Package" href="SmartCar.sysadl#//@packages[name='scComponents']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_w2e4IBOEEe-W8ZKxE9676w" name="scPortsDiagram" repPath="#_w2dqABOEEe-W8ZKxE9676w" changeId="1715865971168">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_w2e4IBOEEe-W8ZKxE9676w" name="scPortsDiagram" repPath="#_w2dqABOEEe-W8ZKxE9676w" changeId="1716463509142">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']"/>
         <target xmi:type="sysadl:Package" href="SmartCar.sysadl#//@packages[name='scPorts']"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_8EwaEBj4Ee-xPOCdR5LiOg" name="displayIDB" repPath="#_8Et90Bj4Ee-xPOCdR5LiOg" changeId="1716464294443">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']"/>
+        <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@composite"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -7899,7 +7903,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_09xlAxOBEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_09w98ROBEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_09w98hOBEe-W8ZKxE9676w" x="150" y="110" width="93"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_09w98hOBEe-W8ZKxE9676w" x="45" y="39" width="93"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_9SAFABOBEe-W8ZKxE9676w" type="3009" element="_9RypoBOBEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_9SAsEBOBEe-W8ZKxE9676w" type="5004"/>
@@ -7910,68 +7914,115 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_9SAFAROBEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9SAFAhOBEe-W8ZKxE9676w" x="30" y="189"/>
             </children>
-            <children xmi:type="notation:Node" xmi:id="_fezFgBOCEe-W8ZKxE9676w" type="3009" element="_feKMUBOCEe-W8ZKxE9676w">
-              <children xmi:type="notation:Node" xmi:id="_fezskBOCEe-W8ZKxE9676w" type="5004"/>
-              <children xmi:type="notation:Node" xmi:id="_fezskROCEe-W8ZKxE9676w" type="7003">
-                <children xmi:type="notation:Node" xmi:id="_7RUxQBOCEe-W8ZKxE9676w" type="3010" element="_7RGu0BOCEe-W8ZKxE9676w">
-                  <styles xmi:type="notation:FontStyle" xmi:id="_7RUxQROCEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_7RUxQhOCEe-W8ZKxE9676w"/>
-                </children>
-                <styles xmi:type="notation:SortingStyle" xmi:id="_fezskhOCEe-W8ZKxE9676w"/>
-                <styles xmi:type="notation:FilteringStyle" xmi:id="_fezskxOCEe-W8ZKxE9676w"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_fezFgROCEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fezFghOCEe-W8ZKxE9676w" x="275" y="186"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_3ms5oBOCEe-W8ZKxE9676w" type="3007" element="_3l-g4BOCEe-W8ZKxE9676w">
-              <children xmi:type="notation:Node" xmi:id="_3mtgsBOCEe-W8ZKxE9676w" type="5003">
-                <layoutConstraint xmi:type="notation:Location" xmi:id="_3mtgsROCEe-W8ZKxE9676w" y="5"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_3muHwBOCEe-W8ZKxE9676w" type="3003" element="_3mCyUBOCEe-W8ZKxE9676w">
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_3muHwROCEe-W8ZKxE9676w" fontName="Noto Sans"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3muHwhOCEe-W8ZKxE9676w"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_3ms5oROCEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3ms5ohOCEe-W8ZKxE9676w" x="10" y="69" width="106" height="30"/>
-            </children>
             <children xmi:type="notation:Node" xmi:id="_HhXmkBODEe-W8ZKxE9676w" type="3009" element="_HhF5wBODEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_HhXmkxODEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_HhXmlBODEe-W8ZKxE9676w" type="7003">
-                <children xmi:type="notation:Node" xmi:id="_Jx10YBODEe-W8ZKxE9676w" type="3010" element="_JxrcURODEe-W8ZKxE9676w">
-                  <styles xmi:type="notation:FontStyle" xmi:id="_Jx10YRODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_Jx10YhODEe-W8ZKxE9676w"/>
-                </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_HhXmlRODEe-W8ZKxE9676w"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_HhXmlhODEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_HhXmkRODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HhXmkhODEe-W8ZKxE9676w" x="275" y="107"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HhXmkhODEe-W8ZKxE9676w" x="150" y="39"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_16jrcBODEe-W8ZKxE9676w" type="3009" element="_16INoBODEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_16jrcxODEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_16kSgBODEe-W8ZKxE9676w" type="7003">
-                <children xmi:type="notation:Node" xmi:id="_-q0nMBODEe-W8ZKxE9676w" type="3010" element="_-qrdQRODEe-W8ZKxE9676w">
-                  <styles xmi:type="notation:FontStyle" xmi:id="_-q0nMRODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_-q0nMhODEe-W8ZKxE9676w"/>
-                </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_16kSgRODEe-W8ZKxE9676w"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_16kSghODEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_16jrcRODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_16jrchODEe-W8ZKxE9676w" x="275" y="267"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_16jrchODEe-W8ZKxE9676w" x="495" y="374"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_B68UIBOEEe-W8ZKxE9676w" type="3009" element="_B6tqoBOEEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_B687MBOEEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_B687MROEEe-W8ZKxE9676w" type="7003">
-                <children xmi:type="notation:Node" xmi:id="_M817UBOEEe-W8ZKxE9676w" type="3010" element="_M8umkhOEEe-W8ZKxE9676w">
-                  <styles xmi:type="notation:FontStyle" xmi:id="_M817UROEEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_M817UhOEEe-W8ZKxE9676w"/>
-                </children>
                 <styles xmi:type="notation:SortingStyle" xmi:id="_B687MhOEEe-W8ZKxE9676w"/>
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_B687MxOEEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_B68UIROEEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B68UIhOEEe-W8ZKxE9676w" x="270" y="340"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_B68UIhOEEe-W8ZKxE9676w" x="545" y="295"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_GHVPEBj1Ee-xPOCdR5LiOg" type="3009" element="_GEk2ABj1Ee-xPOCdR5LiOg">
+              <children xmi:type="notation:Node" xmi:id="_GHauoBj1Ee-xPOCdR5LiOg" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_GHbVsBj1Ee-xPOCdR5LiOg" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_HKFFgBj1Ee-xPOCdR5LiOg" type="3010" element="_HIRusBj1Ee-xPOCdR5LiOg">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_HKFFgRj1Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_HKFFghj1Ee-xPOCdR5LiOg"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_IPkG4Bj1Ee-xPOCdR5LiOg" type="3010" element="_IPB7YBj1Ee-xPOCdR5LiOg">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_IPkt8Bj1Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_IPkt8Rj1Ee-xPOCdR5LiOg"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_GHbVsRj1Ee-xPOCdR5LiOg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_GHbVshj1Ee-xPOCdR5LiOg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_GHVPERj1Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GHVPEhj1Ee-xPOCdR5LiOg" x="505" y="164"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_RYtcsBj1Ee-xPOCdR5LiOg" type="3009" element="_RWmj4Bj1Ee-xPOCdR5LiOg">
+              <children xmi:type="notation:Node" xmi:id="_RYuDwBj1Ee-xPOCdR5LiOg" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_RYuDwRj1Ee-xPOCdR5LiOg" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_Sx7SYBj1Ee-xPOCdR5LiOg" type="3010" element="_Sv-xoBj1Ee-xPOCdR5LiOg">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_Sx7SYRj1Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_Sx7SYhj1Ee-xPOCdR5LiOg"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_RYuDwhj1Ee-xPOCdR5LiOg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_RYuDwxj1Ee-xPOCdR5LiOg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_RYtcsRj1Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RYtcshj1Ee-xPOCdR5LiOg" x="440" y="93"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_QPRS8Bj2Ee-xPOCdR5LiOg" type="3009" element="_QNUyMBj2Ee-xPOCdR5LiOg">
+              <children xmi:type="notation:Node" xmi:id="_QPR6ABj2Ee-xPOCdR5LiOg" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_QPR6ARj2Ee-xPOCdR5LiOg" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_QPR6Ahj2Ee-xPOCdR5LiOg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_QPR6Axj2Ee-xPOCdR5LiOg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_QPRS8Rj2Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QPRS8hj2Ee-xPOCdR5LiOg" x="135" y="277"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_WxiGEBj2Ee-xPOCdR5LiOg" type="3009" element="_WxHPUBj2Ee-xPOCdR5LiOg">
+              <children xmi:type="notation:Node" xmi:id="_WxitIBj2Ee-xPOCdR5LiOg" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_WxitIRj2Ee-xPOCdR5LiOg" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_WxitIhj2Ee-xPOCdR5LiOg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_WxitIxj2Ee-xPOCdR5LiOg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_WxiGERj2Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WxiGEhj2Ee-xPOCdR5LiOg" x="30" y="277"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_LUiB0Bj3Ee-xPOCdR5LiOg" type="3009" element="_LS97kBj3Ee-xPOCdR5LiOg">
+              <children xmi:type="notation:Node" xmi:id="_LUio4Bj3Ee-xPOCdR5LiOg" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_LUio4Rj3Ee-xPOCdR5LiOg" type="7003">
+                <children xmi:type="notation:Node" xmi:id="_Oid9cBj3Ee-xPOCdR5LiOg" type="3010" element="_OiLCgBj3Ee-xPOCdR5LiOg">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_Oid9cRj3Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_Oid9chj3Ee-xPOCdR5LiOg"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_XAhH0Bj3Ee-xPOCdR5LiOg" type="3010" element="_W_6q4Bj3Ee-xPOCdR5LiOg">
+                  <styles xmi:type="notation:FontStyle" xmi:id="_XAhu4Bj3Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_XAhu4Rj3Ee-xPOCdR5LiOg"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_LUio4hj3Ee-xPOCdR5LiOg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_LUio4xj3Ee-xPOCdR5LiOg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_LUiB0Rj3Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LUiB0hj3Ee-xPOCdR5LiOg" x="291" y="22"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_ePzuIBj5Ee-xPOCdR5LiOg" type="3009" element="_eOeRYBj5Ee-xPOCdR5LiOg">
+              <children xmi:type="notation:Node" xmi:id="_ePzuIxj5Ee-xPOCdR5LiOg" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_ePzuJBj5Ee-xPOCdR5LiOg" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_ePzuJRj5Ee-xPOCdR5LiOg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_ePzuJhj5Ee-xPOCdR5LiOg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_ePzuIRj5Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ePzuIhj5Ee-xPOCdR5LiOg" x="291" y="119"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_gCInYBj5Ee-xPOCdR5LiOg" type="3009" element="_gB2TgBj5Ee-xPOCdR5LiOg">
+              <children xmi:type="notation:Node" xmi:id="_gCInYxj5Ee-xPOCdR5LiOg" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_gCInZBj5Ee-xPOCdR5LiOg" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_gCInZRj5Ee-xPOCdR5LiOg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_gCInZhj5Ee-xPOCdR5LiOg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_gCInYRj5Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gCInYhj5Ee-xPOCdR5LiOg" x="291" y="199"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_ID590hOBEe-W8ZKxE9676w"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_ID590xOBEe-W8ZKxE9676w"/>
@@ -7980,6 +8031,22 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ID5WxBOBEe-W8ZKxE9676w" y="-30" width="673" height="493"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_IDmb0hOBEe-W8ZKxE9676w"/>
+        <edges xmi:type="notation:Edge" xmi:id="_dEVuwBdzEe-y3qsqsboVgg" type="4001" element="_dEBlsBdzEe-y3qsqsboVgg" source="_HhXmkBODEe-W8ZKxE9676w" target="_09w98BOBEe-W8ZKxE9676w">
+          <children xmi:type="notation:Node" xmi:id="_dEdDgBdzEe-y3qsqsboVgg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dEdDgRdzEe-y3qsqsboVgg" x="2" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_dEgt4BdzEe-y3qsqsboVgg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dEgt4RdzEe-y3qsqsboVgg" x="-2" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_dEh8ABdzEe-y3qsqsboVgg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dEh8ARdzEe-y3qsqsboVgg" x="-12"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_dEVuwRdzEe-y3qsqsboVgg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dEVuwhdzEe-y3qsqsboVgg" fontName="Noto Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dEVuwxdzEe-y3qsqsboVgg" points="[-39, 0, 60, 0]$[-53, 0, 46, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dErtABdzEe-y3qsqsboVgg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dErtARdzEe-y3qsqsboVgg" id="(0.5,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_ID5WwBOBEe-W8ZKxE9676w" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -8000,7 +8067,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_09jikBOBEe-W8ZKxE9676w" name="&lt;&lt;value type>>&#xA;liters">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_09jikBOBEe-W8ZKxE9676w" name="&lt;&lt;value type>>&#xA;liters" incomingEdges="_dEBlsBdzEe-y3qsqsboVgg">
         <target xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='liters']"/>
         <semanticElements xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='liters']"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_09jikROBEe-W8ZKxE9676w" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="126,177,254">
@@ -8016,45 +8083,13 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_feKMUBOCEe-W8ZKxE9676w" name="&lt;&lt;value type>>&#xA;enumOnOff">
-        <target xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='enumOnOff']"/>
-        <semanticElements xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='enumOnOff']"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_fePE0BOCEe-W8ZKxE9676w" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="126,177,254">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" uid="_7RGu0BOCEe-W8ZKxE9676w" name="Dimension = encryptedData">
-          <target xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-          <semanticElements xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-          <ownedStyle xmi:type="diagram:Dot" uid="_7RLnUBOCEe-W8ZKxE9676w" showIcon="false">
-            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@subNodeMappings[name='BDD.ValueType.Dimension']/@style"/>
-          </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@subNodeMappings[name='BDD.ValueType.Dimension']"/>
-        </ownedElements>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" uid="_3l-g4BOCEe-W8ZKxE9676w" name="&lt;&lt;dimension>>&#xA;encryptedData" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-        <semanticElements xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-        <ownedStyle xmi:type="diagram:Square" uid="_3mCyUBOCEe-W8ZKxE9676w" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" labelPosition="node" color="230,230,250">
-          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subNodeMappings[name='BDD.Dimension']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subNodeMappings[name='BDD.Dimension']"/>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HhF5wBODEe-W8ZKxE9676w" name="&lt;&lt;value type>>&#xA;comunicationDisplayData">
-        <target xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='comunicationDisplayData']"/>
-        <semanticElements xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='comunicationDisplayData']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HhF5wBODEe-W8ZKxE9676w" name="&lt;&lt;value type>>&#xA;eLiters" outgoingEdges="_dEBlsBdzEe-y3qsqsboVgg">
+        <target xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='eLiters']"/>
+        <semanticElements xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='eLiters']"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HhGg0BODEe-W8ZKxE9676w" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="126,177,254">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" uid="_JxrcURODEe-W8ZKxE9676w" name="Dimension = encryptedData">
-          <target xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-          <semanticElements xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-          <ownedStyle xmi:type="diagram:Dot" uid="_JxsDYBODEe-W8ZKxE9676w" showIcon="false">
-            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@subNodeMappings[name='BDD.ValueType.Dimension']/@style"/>
-          </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@subNodeMappings[name='BDD.ValueType.Dimension']"/>
-        </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_16INoBODEe-W8ZKxE9676w" name="&lt;&lt;value type>>&#xA;criticalAlert">
         <target xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='criticalAlert']"/>
@@ -8063,14 +8098,6 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" uid="_-qrdQRODEe-W8ZKxE9676w" name="Dimension = encryptedData">
-          <target xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-          <semanticElements xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-          <ownedStyle xmi:type="diagram:Dot" uid="_-qsEUBODEe-W8ZKxE9676w" showIcon="false">
-            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@subNodeMappings[name='BDD.ValueType.Dimension']/@style"/>
-          </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@subNodeMappings[name='BDD.ValueType.Dimension']"/>
-        </ownedElements>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_B6tqoBOEEe-W8ZKxE9676w" name="&lt;&lt;value type>>&#xA;noSignalAlert">
         <target xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='noSignalAlert']"/>
@@ -8079,15 +8106,111 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" uid="_M8umkhOEEe-W8ZKxE9676w" name="Dimension = encryptedData">
-          <target xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-          <semanticElements xmi:type="sysadl:DimensionDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedData']"/>
-          <ownedStyle xmi:type="diagram:Dot" uid="_M8umkxOEEe-W8ZKxE9676w" showIcon="false">
-            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@subNodeMappings[name='BDD.ValueType.Dimension']/@style"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_GEk2ABj1Ee-xPOCdR5LiOg" name="&lt;&lt;enumeration>>&#xA;onOff">
+        <target xmi:type="sysadl:Enumeration" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOff']"/>
+        <semanticElements xmi:type="sysadl:Enumeration" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOff']"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_GEyRYBj1Ee-xPOCdR5LiOg" iconPath="/org.sysadl.viewpoints/icons/Enumeration.gif" borderSize="1" borderSizeComputationExpression="1" foregroundColor="126,177,254">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.Enum']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.Enum']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_HIRusBj1Ee-xPOCdR5LiOg" name="On">
+          <target xmi:type="sysadl:EnumLiteralValue" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOff']/@literals[name='On']"/>
+          <semanticElements xmi:type="sysadl:EnumLiteralValue" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOff']/@literals[name='On']"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_HIZDcBj1Ee-xPOCdR5LiOg" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.Enum']/@subNodeMappings[name='BDD.Enum.Elements']/@style"/>
           </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@subNodeMappings[name='BDD.ValueType.Dimension']"/>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.Enum']/@subNodeMappings[name='BDD.Enum.Elements']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_IPB7YBj1Ee-xPOCdR5LiOg" name="Off">
+          <target xmi:type="sysadl:EnumLiteralValue" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOff']/@literals[name='Off']"/>
+          <semanticElements xmi:type="sysadl:EnumLiteralValue" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOff']/@literals[name='Off']"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_IPB7YRj1Ee-xPOCdR5LiOg" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.Enum']/@subNodeMappings[name='BDD.Enum.Elements']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.Enum']/@subNodeMappings[name='BDD.Enum.Elements']"/>
         </ownedElements>
       </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_RWmj4Bj1Ee-xPOCdR5LiOg" name="&lt;&lt;dataType>>&#xA;onOffData">
+        <target xmi:type="sysadl:DataTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOffData']"/>
+        <semanticElements xmi:type="sysadl:DataTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOffData']"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_RWxjABj1Ee-xPOCdR5LiOg" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" borderSize="1" borderSizeComputationExpression="1" backgroundColor="230,230,250" foregroundColor="230,230,250">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_Sv-xoBj1Ee-xPOCdR5LiOg" name="type:onOff">
+          <target xmi:type="sysadl:TypeUse" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOffData']/@attributes[name='type']"/>
+          <semanticElements xmi:type="sysadl:TypeUse" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='onOffData']/@attributes[name='type']"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_SwH7kBj1Ee-xPOCdR5LiOg" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@subNodeMappings[name='BDD.DataTypeAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@subNodeMappings[name='BDD.DataTypeAttribute']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_QNUyMBj2Ee-xPOCdR5LiOg" name="&lt;&lt;value type>>&#xA;encriptationKey">
+        <target xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encriptationKey']"/>
+        <semanticElements xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encriptationKey']"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_QNbf4Bj2Ee-xPOCdR5LiOg" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="126,177,254">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_WxHPUBj2Ee-xPOCdR5LiOg" name="&lt;&lt;value type>>&#xA;byteStream">
+        <target xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='byteStream']"/>
+        <semanticElements xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='byteStream']"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_WxH2YBj2Ee-xPOCdR5LiOg" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="126,177,254">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ValueTypeDef']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_LS97kBj3Ee-xPOCdR5LiOg" name="&lt;&lt;dataType>>&#xA;encryptedLiters">
+        <target xmi:type="sysadl:DataTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedLiters']"/>
+        <semanticElements xmi:type="sysadl:DataTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedLiters']"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_LTBl8Bj3Ee-xPOCdR5LiOg" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" borderSize="1" borderSizeComputationExpression="1" backgroundColor="230,230,250" foregroundColor="230,230,250">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']"/>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_OiLCgBj3Ee-xPOCdR5LiOg" name="key:encriptationKey">
+          <target xmi:type="sysadl:TypeUse" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedLiters']/@attributes[name='key']"/>
+          <semanticElements xmi:type="sysadl:TypeUse" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedLiters']/@attributes[name='key']"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_OiLCgRj3Ee-xPOCdR5LiOg" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@subNodeMappings[name='BDD.DataTypeAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@subNodeMappings[name='BDD.DataTypeAttribute']"/>
+        </ownedElements>
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_W_6q4Bj3Ee-xPOCdR5LiOg" name="value:eLiters">
+          <target xmi:type="sysadl:TypeUse" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedLiters']/@attributes[name='value']"/>
+          <semanticElements xmi:type="sysadl:TypeUse" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedLiters']/@attributes[name='value']"/>
+          <ownedStyle xmi:type="diagram:Dot" uid="_W_7R8Bj3Ee-xPOCdR5LiOg" showIcon="false">
+            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@subNodeMappings[name='BDD.DataTypeAttribute']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@subNodeMappings[name='BDD.DataTypeAttribute']"/>
+        </ownedElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_eOeRYBj5Ee-xPOCdR5LiOg" name="&lt;&lt;dataType>>&#xA;encryptedTemp">
+        <target xmi:type="sysadl:DataTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedTemp']"/>
+        <semanticElements xmi:type="sysadl:DataTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedTemp']"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_eOh7wBj5Ee-xPOCdR5LiOg" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" borderSize="1" borderSizeComputationExpression="1" backgroundColor="230,230,250" foregroundColor="230,230,250">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_gB2TgBj5Ee-xPOCdR5LiOg" name="&lt;&lt;dataType>>&#xA;encryptedPorcent">
+        <target xmi:type="sysadl:DataTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedPorcent']"/>
+        <semanticElements xmi:type="sysadl:DataTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='encryptedPorcent']"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_gB2TgRj5Ee-xPOCdR5LiOg" iconPath="/org.sysadl.viewpoints/icons/DataType.gif" borderSize="1" borderSizeComputationExpression="1" backgroundColor="230,230,250" foregroundColor="230,230,250">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.DataTypeDef']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_dEBlsBdzEe-y3qsqsboVgg" sourceNode="_HhF5wBODEe-W8ZKxE9676w" targetNode="_09jikBOBEe-W8ZKxE9676w">
+      <target xmi:type="sysadl:ValueTypeDef" href="SmartCar.sysadl#//@packages[name='dataTypes']/@definitions[name='eLiters']"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_dECz0BdzEe-y3qsqsboVgg" targetArrow="InputClosedArrow" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.SuperType']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_dECz0RdzEe-y3qsqsboVgg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.SuperType']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_IDZngROBEe-W8ZKxE9676w"/>
@@ -8101,27 +8224,16 @@
           <children xmi:type="notation:Node" xmi:id="_WfvVQBOBEe-W8ZKxE9676w" type="5006"/>
           <children xmi:type="notation:Node" xmi:id="_WfvVQROBEe-W8ZKxE9676w" type="7001">
             <children xmi:type="notation:Node" xmi:id="_U0Zi4BODEe-W8ZKxE9676w" type="3009" element="_UzT9wBODEe-W8ZKxE9676w">
-              <children xmi:type="notation:Node" xmi:id="_j-pYIBOGEe-W8ZKxE9676w" type="3012" element="_j-fnJBOGEe-W8ZKxE9676w">
-                <children xmi:type="notation:Node" xmi:id="_j-qmQBOGEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_j-qmQROGEe-W8ZKxE9676w" x="21" y="2"/>
+              <children xmi:type="notation:Node" xmi:id="_oyqbQBdsEe-y3qsqsboVgg" type="3012" element="_oxCDkBdsEe-y3qsqsboVgg">
+                <children xmi:type="notation:Node" xmi:id="_oy32oBdsEe-y3qsqsboVgg" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_oy32oRdsEe-y3qsqsboVgg" x="-66" y="21"/>
                 </children>
-                <children xmi:type="notation:Node" xmi:id="_j-rNUBOGEe-W8ZKxE9676w" type="3003" element="_j-g1QBOGEe-W8ZKxE9676w">
-                  <styles xmi:type="notation:ShapeStyle" xmi:id="_j-rNUROGEe-W8ZKxE9676w" fontName="Noto Sans"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j-rNUhOGEe-W8ZKxE9676w"/>
+                <children xmi:type="notation:Node" xmi:id="_ozYM8BdsEe-y3qsqsboVgg" type="3003" element="_oxhLwBdsEe-y3qsqsboVgg">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_ozYM8RdsEe-y3qsqsboVgg" fontName="Noto Sans"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ozYM8hdsEe-y3qsqsboVgg"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_j-pYIROGEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8" fillColor="13606770"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_j-pYIhOGEe-W8ZKxE9676w" x="5" y="47" width="20" height="19"/>
-              </children>
-              <children xmi:type="notation:Node" xmi:id="_noxggBOGEe-W8ZKxE9676w" type="3012" element="_noi3CBOGEe-W8ZKxE9676w">
-                <children xmi:type="notation:Node" xmi:id="_noyuoBOGEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_noyuoROGEe-W8ZKxE9676w" x="21" y="2"/>
-                </children>
-                <children xmi:type="notation:Node" xmi:id="_no0j0BOGEe-W8ZKxE9676w" type="3003" element="_nojeEBOGEe-W8ZKxE9676w">
-                  <styles xmi:type="notation:ShapeStyle" xmi:id="_no0j0ROGEe-W8ZKxE9676w" fontName="Noto Sans"/>
-                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_no0j0hOGEe-W8ZKxE9676w"/>
-                </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_noxggROGEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8" fillColor="2697711"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_noxgghOGEe-W8ZKxE9676w" x="87" y="47" width="20" height="20"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_oyqbQRdsEe-y3qsqsboVgg" fontName="Noto Sans" fontHeight="8"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oyqbQhdsEe-y3qsqsboVgg" x="63" y="53" width="21" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_U0aJ8BODEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_U0axABODEe-W8ZKxE9676w" type="7003">
@@ -8133,19 +8245,19 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_U0axAhODEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_U0Zi4RODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U0Zi4hODEe-W8ZKxE9676w" x="32" y="49"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U0Zi4hODEe-W8ZKxE9676w" x="5" y="29"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_XsXOgBODEe-W8ZKxE9676w" type="3009" element="_XsLBQBODEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_xNq-MBOGEe-W8ZKxE9676w" type="3012" element="_xNgmIxOGEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_xNq-MxOGEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_xNq-NBOGEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_xNq-NBOGEe-W8ZKxE9676w" x="-61" y="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_xNsMUBOGEe-W8ZKxE9676w" type="3003" element="_xNgmJBOGEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_xNsMUROGEe-W8ZKxE9676w" fontName="Noto Sans"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xNsMUhOGEe-W8ZKxE9676w"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_xNq-MROGEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8" fillColor="2697711"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xNq-MhOGEe-W8ZKxE9676w" x="-12" y="35" width="20" height="20"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xNq-MhOGEe-W8ZKxE9676w" x="35" y="47" width="20" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_XsXOgxODEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_XsXOhBODEe-W8ZKxE9676w" type="7003">
@@ -8153,19 +8265,19 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_XsXOhhODEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_XsXOgRODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XsXOghODEe-W8ZKxE9676w" x="230" y="179"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XsXOghODEe-W8ZKxE9676w" x="230" y="209"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_cT5aUBODEe-W8ZKxE9676w" type="3009" element="_cTpisBODEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_wFM6QBOGEe-W8ZKxE9676w" type="3012" element="_wFDwUROGEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_wFNhUBOGEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_wFNhUROGEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_wFNhUROGEe-W8ZKxE9676w" x="-61" y="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_wFOvcBOGEe-W8ZKxE9676w" type="3003" element="_wFEXYBOGEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_wFOvcROGEe-W8ZKxE9676w" fontName="Noto Sans"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wFOvchOGEe-W8ZKxE9676w"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_wFM6QROGEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8" fillColor="2697711"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wFM6QhOGEe-W8ZKxE9676w" x="-12" y="35" width="20" height="20"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wFM6QhOGEe-W8ZKxE9676w" x="45" y="56" width="20" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_cT6BYBODEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_cT6BYRODEe-W8ZKxE9676w" type="7003">
@@ -8173,19 +8285,19 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_cT6BYxODEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_cT5aURODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cT5aUhODEe-W8ZKxE9676w" x="237" y="89"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cT5aUhODEe-W8ZKxE9676w" x="230" y="109" width="157" height="66"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_fnIssBODEe-W8ZKxE9676w" type="3009" element="_fm6qQBODEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_svm3cBOGEe-W8ZKxE9676w" type="3012" element="_sveUkROGEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_svm3cxOGEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_svm3dBOGEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_svm3dBOGEe-W8ZKxE9676w" x="-61" y="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_svnegBOGEe-W8ZKxE9676w" type="3003" element="_sveUkhOGEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_svnegROGEe-W8ZKxE9676w" fontName="Noto Sans"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svneghOGEe-W8ZKxE9676w"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_svm3cROGEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8" fillColor="2697711" lineColor="2697711"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svm3chOGEe-W8ZKxE9676w" x="-12" y="35" width="20" height="20"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_svm3chOGEe-W8ZKxE9676w" x="32" y="47" width="20" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_fnJTwhODEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_fnJTwxODEe-W8ZKxE9676w" type="7003">
@@ -8193,19 +8305,19 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_fnJTxRODEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_fnJTwBODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fnJTwRODEe-W8ZKxE9676w" x="228" y="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fnJTwRODEe-W8ZKxE9676w" x="244" y="9"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_isabkBODEe-W8ZKxE9676w" type="3009" element="_isIHsBODEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_4B7VsBOFEe-W8ZKxE9676w" type="3012" element="_4BROZhOFEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_4B78wBOFEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_4B78wROFEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_4B78wROFEe-W8ZKxE9676w" x="-72" y="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_4B_AEBOFEe-W8ZKxE9676w" type="3003" element="_4BbmcBOFEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_4B_AEROFEe-W8ZKxE9676w" fontName="Noto Sans"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4B_AEhOFEe-W8ZKxE9676w"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_4B7VsROFEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4B7VshOFEe-W8ZKxE9676w" y="47" width="20" height="20"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4B7VshOFEe-W8ZKxE9676w" x="20" y="47" width="20" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_isbCoBODEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_isbCoRODEe-W8ZKxE9676w" type="7003">
@@ -8213,19 +8325,19 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_isbCoxODEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_isabkRODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_isabkhODEe-W8ZKxE9676w" x="400" y="14"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_isabkhODEe-W8ZKxE9676w" x="490" y="14"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_pdZnMBODEe-W8ZKxE9676w" type="3009" element="_pdK9sBODEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_CScjQBOGEe-W8ZKxE9676w" type="3012" element="_CSVOghOGEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_CSdKUBOGEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_CSdKUROGEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_CSdKUROGEe-W8ZKxE9676w" x="-66" y="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_CSeYcBOGEe-W8ZKxE9676w" type="3003" element="_CSV1kBOGEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_CSeYcROGEe-W8ZKxE9676w" fontName="Noto Sans"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CSeYchOGEe-W8ZKxE9676w"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_CScjQROGEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CScjQhOGEe-W8ZKxE9676w" y="47" width="20" height="20"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CScjQhOGEe-W8ZKxE9676w" x="35" y="47" width="20" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_pdZnMxODEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_pdZnNBODEe-W8ZKxE9676w" type="7003">
@@ -8233,19 +8345,19 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_pdZnNhODEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_pdZnMRODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdZnMhODEe-W8ZKxE9676w" x="400" y="89"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pdZnMhODEe-W8ZKxE9676w" x="480" y="124"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_rg9aYBODEe-W8ZKxE9676w" type="3009" element="_rgx0MBODEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_EwrgQBOGEe-W8ZKxE9676w" type="3012" element="_EwhvQhOGEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_EwsHUBOGEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_EwsHUROGEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_EwsHUROGEe-W8ZKxE9676w" x="-73" y="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_EwtVcBOGEe-W8ZKxE9676w" type="3003" element="_EwhvQxOGEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_EwtVcROGEe-W8ZKxE9676w" fontName="Noto Sans"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EwtVchOGEe-W8ZKxE9676w"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_EwrgQROGEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EwrgQhOGEe-W8ZKxE9676w" y="47" width="20" height="20"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_EwrgQhOGEe-W8ZKxE9676w" x="39" y="47" width="20" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_rg9aYxODEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_rg-BcBODEe-W8ZKxE9676w" type="7003">
@@ -8253,19 +8365,19 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_rg-BchODEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_rg9aYRODEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rg9aYhODEe-W8ZKxE9676w" x="400" y="179"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rg9aYhODEe-W8ZKxE9676w" x="466" y="224"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_TDJgUBOGEe-W8ZKxE9676w" type="3009" element="_TCJawBOGEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_yLyzUBOGEe-W8ZKxE9676w" type="3012" element="_yLpCVhOGEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_yLyzUxOGEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_yLyzVBOGEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_yLyzVBOGEe-W8ZKxE9676w" x="-59" y="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_yL0BcBOGEe-W8ZKxE9676w" type="3003" element="_yLppYBOGEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_yL0BcROGEe-W8ZKxE9676w" fontName="Noto Sans"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yL0BchOGEe-W8ZKxE9676w"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_yLyzUROGEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8" fillColor="2697711"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yLyzUhOGEe-W8ZKxE9676w" x="95" y="35" width="20" height="20"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yLyzUhOGEe-W8ZKxE9676w" x="66" y="47" width="20" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_TDJgUxOGEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_TDJgVBOGEe-W8ZKxE9676w" type="7003">
@@ -8278,25 +8390,36 @@
             <children xmi:type="notation:Node" xmi:id="_5WEzQBOHEe-W8ZKxE9676w" type="3009" element="_5VyfYBOHEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_H6Bk4BOIEe-W8ZKxE9676w" type="3012" element="_H54a9BOIEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_H6CL8BOIEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_H6CL8ROIEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_H6CL8ROIEe-W8ZKxE9676w" x="-81" y="-17"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_H6EBIBOIEe-W8ZKxE9676w" type="3003" element="_H55CABOIEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_H6EBIROIEe-W8ZKxE9676w" fontName="Noto Sans"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H6EBIhOIEe-W8ZKxE9676w"/>
                 </children>
-                <styles xmi:type="notation:ShapeStyle" xmi:id="_H6Bk4ROIEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8" fillColor="2697711"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H6Bk4hOIEe-W8ZKxE9676w" y="-12" width="20" height="20"/>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_H6Bk4ROIEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8" fillColor="4108284"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H6Bk4hOIEe-W8ZKxE9676w" x="75" y="-12" width="20" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_LQTkMBOIEe-W8ZKxE9676w" type="3012" element="_LQMPdhOIEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_LQTkMxOIEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_LQTkNBOIEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_LQTkNBOIEe-W8ZKxE9676w" x="-77" y="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_LQULQBOIEe-W8ZKxE9676w" type="3003" element="_LQM2gBOIEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_LQULQROIEe-W8ZKxE9676w" fontName="Noto Sans"/>
                   <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LQULQhOIEe-W8ZKxE9676w"/>
                 </children>
                 <styles xmi:type="notation:ShapeStyle" xmi:id="_LQTkMROIEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8" fillColor="4108284"/>
-                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LQTkMhOIEe-W8ZKxE9676w" x="80" y="-12" width="20" height="20"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LQTkMhOIEe-W8ZKxE9676w" x="88" y="47" width="20" height="20"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_nWN8MBj9Ee-xPOCdR5LiOg" type="3012" element="_nWH1kBj9Ee-xPOCdR5LiOg">
+                <children xmi:type="notation:Node" xmi:id="_nWOjQhj9Ee-xPOCdR5LiOg" type="5010">
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_nWOjQxj9Ee-xPOCdR5LiOg" x="-144"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_nWPKUBj9Ee-xPOCdR5LiOg" type="3003" element="_nWH1kRj9Ee-xPOCdR5LiOg">
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_nWPKURj9Ee-xPOCdR5LiOg" fontName="Noto Sans"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nWPKUhj9Ee-xPOCdR5LiOg"/>
+                </children>
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_nWOjQBj9Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8" fillColor="2697711"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nWOjQRj9Ee-xPOCdR5LiOg" x="-12" y="18" width="20" height="20"/>
               </children>
               <children xmi:type="notation:Node" xmi:id="_5WEzQxOHEe-W8ZKxE9676w" type="5004"/>
               <children xmi:type="notation:Node" xmi:id="_5WEzRBOHEe-W8ZKxE9676w" type="7003">
@@ -8304,12 +8427,12 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_5WEzRhOHEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_5WEzQROHEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5WEzQhOHEe-W8ZKxE9676w" x="315" y="309"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5WEzQhOHEe-W8ZKxE9676w" x="450" y="362"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_BRLBkBOIEe-W8ZKxE9676w" type="3009" element="_BQ9mMBOIEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_Fi9m4BOIEe-W8ZKxE9676w" type="3012" element="_FizO0hOIEe-W8ZKxE9676w">
                 <children xmi:type="notation:Node" xmi:id="_Fi9m4xOIEe-W8ZKxE9676w" type="5010">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_Fi9m5BOIEe-W8ZKxE9676w" x="21" y="2"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_Fi9m5BOIEe-W8ZKxE9676w" x="-80" y="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_Fi-1ABOIEe-W8ZKxE9676w" type="3003" element="_FizO0xOIEe-W8ZKxE9676w">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_Fi-1AROIEe-W8ZKxE9676w" fontName="Noto Sans"/>
@@ -8324,7 +8447,16 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_BRLooxOIEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_BRLBkROIEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BRLBkhOIEe-W8ZKxE9676w" x="105" y="354"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BRLBkhOIEe-W8ZKxE9676w" x="50" y="263"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_wOHxABj9Ee-xPOCdR5LiOg" type="3009" element="_wNI5kBj9Ee-xPOCdR5LiOg">
+              <children xmi:type="notation:Node" xmi:id="_wOIYEBj9Ee-xPOCdR5LiOg" type="5004"/>
+              <children xmi:type="notation:Node" xmi:id="_wOIYERj9Ee-xPOCdR5LiOg" type="7003">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_wOIYEhj9Ee-xPOCdR5LiOg"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_wOIYExj9Ee-xPOCdR5LiOg"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_wOHxARj9Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wOHxAhj9Ee-xPOCdR5LiOg" x="102" y="362"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_WfvVQhOBEe-W8ZKxE9676w"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_WfvVQxOBEe-W8ZKxE9676w"/>
@@ -8348,20 +8480,10 @@
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_UzT9wBODEe-W8ZKxE9676w" name="&lt;&lt;component>>&#xA;displayControllerCP" tooltipText="Component displayControllerCP">
         <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']"/>
         <semanticElements xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_j-fnJBOGEe-W8ZKxE9676w" name="newPort : displaDataIPT [1,1] " tooltipText="Port newPort" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@ports[name='newPort']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@ports[name='newPort']"/>
-          <ownedStyle xmi:type="diagram:Square" uid="_j-g1QBOGEe-W8ZKxE9676w" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="114,159,207">
-            <customFeatures>color</customFeatures>
-            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
-          </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']"/>
-        </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_noi3CBOGEe-W8ZKxE9676w" name="newPort : alertPortIPT [1,1] " tooltipText="Port newPort" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@ports[name='newPort']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@ports[name='newPort']"/>
-          <ownedStyle xmi:type="diagram:Square" uid="_nojeEBOGEe-W8ZKxE9676w" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="239,41,41">
-            <customFeatures>color</customFeatures>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_oxCDkBdsEe-y3qsqsboVgg" name="portaAlerta : alertPortIPT [1,1] " tooltipText="Port portaAlerta" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@ports[name='portaAlerta']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@ports[name='portaAlerta']"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_oxhLwBdsEe-y3qsqsboVgg" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="255,255,255">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']"/>
@@ -8482,7 +8604,7 @@
       <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_TCJawBOGEe-W8ZKxE9676w" name="&lt;&lt;component>>&#xA;beepControllerCP">
         <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='beepControllerCP']"/>
         <semanticElements xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='beepControllerCP']"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_yLpCVhOGEe-W8ZKxE9676w" name="newPort : alertPortIPT [1,1] " tooltipText="Port newPort" width="2" height="2" resizeKind="NSEW">
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_yLpCVhOGEe-W8ZKxE9676w" name="newPort : alertPortIPT [1,2] " tooltipText="Port newPort" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='beepControllerCP']/@ports[name='newPort']"/>
           <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='beepControllerCP']/@ports[name='newPort']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_yLppYBOGEe-W8ZKxE9676w" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="239,41,41">
@@ -8502,7 +8624,7 @@
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_H54a9BOIEe-W8ZKxE9676w" name="tempSensorAlert : alertPortIPT [1,1] " tooltipText="Port tempSensorAlert" width="2" height="2" resizeKind="NSEW">
           <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='tempSensorAlert']"/>
           <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='tempSensorAlert']"/>
-          <ownedStyle xmi:type="diagram:Square" uid="_H55CABOIEe-W8ZKxE9676w" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="239,41,41">
+          <ownedStyle xmi:type="diagram:Square" uid="_H55CABOIEe-W8ZKxE9676w" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="252,175,62">
             <customFeatures>color</customFeatures>
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
           </ownedStyle>
@@ -8512,6 +8634,15 @@
           <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='fuelSensorAlert']"/>
           <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='fuelSensorAlert']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_LQM2gBOIEe-W8ZKxE9676w" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="252,175,62">
+            <customFeatures>color</customFeatures>
+            <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']"/>
+        </ownedBorderedNodes>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_nWH1kBj9Ee-xPOCdR5LiOg" name="alertOut : alertPortOPT [1,1] " tooltipText="Port alertOut" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='alertOut']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='alertOut']"/>
+          <ownedStyle xmi:type="diagram:Square" uid="_nWH1kRj9Ee-xPOCdR5LiOg" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="239,41,41">
             <customFeatures>color</customFeatures>
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
           </ownedStyle>
@@ -8534,6 +8665,14 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']"/>
         </ownedBorderedNodes>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_BQ9mMROIEe-W8ZKxE9676w" iconPath="/org.sysadl.viewpoints/icons/Component.gif" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_wNI5kBj9Ee-xPOCdR5LiOg" name="&lt;&lt;component>>&#xA;inginitionCP">
+        <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='inginitionCP']"/>
+        <semanticElements xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='inginitionCP']"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_wNRccBj9Ee-xPOCdR5LiOg" iconPath="/org.sysadl.viewpoints/icons/Component.gif" borderSize="1" borderSizeComputationExpression="1">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']"/>
@@ -8587,7 +8726,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_w25u4xOEEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_w25H1ROEEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w25H1hOEEe-W8ZKxE9676w" x="320" y="29"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w25H1hOEEe-W8ZKxE9676w" x="290" y="29"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_w25u5BOEEe-W8ZKxE9676w" type="3009" element="_w2uIsBOEEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_w26V8BOEEe-W8ZKxE9676w" type="5004"/>
@@ -8600,20 +8739,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_w26V8xOEEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_w25u5ROEEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w25u5hOEEe-W8ZKxE9676w" x="542" y="194"/>
-            </children>
-            <children xmi:type="notation:Node" xmi:id="_MBzZ8BOFEe-W8ZKxE9676w" type="3009" element="_MBep2BOFEe-W8ZKxE9676w">
-              <children xmi:type="notation:Node" xmi:id="_MB0BABOFEe-W8ZKxE9676w" type="5004"/>
-              <children xmi:type="notation:Node" xmi:id="_MB0BAROFEe-W8ZKxE9676w" type="7003">
-                <children xmi:type="notation:Node" xmi:id="_MB0BBBOFEe-W8ZKxE9676w" type="3010" element="_MBfQ4hOFEe-W8ZKxE9676w">
-                  <styles xmi:type="notation:FontStyle" xmi:id="_MB0BBROFEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_MB0BBhOFEe-W8ZKxE9676w"/>
-                </children>
-                <styles xmi:type="notation:SortingStyle" xmi:id="_MB0BAhOFEe-W8ZKxE9676w"/>
-                <styles xmi:type="notation:FilteringStyle" xmi:id="_MB0BAxOFEe-W8ZKxE9676w"/>
-              </children>
-              <styles xmi:type="notation:ShapeStyle" xmi:id="_MBzZ8ROFEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MBzZ8hOFEe-W8ZKxE9676w" x="514" y="109"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w25u5hOEEe-W8ZKxE9676w" x="410" y="29"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_RN_K8BOFEe-W8ZKxE9676w" type="3009" element="_RN5rYBOFEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_RN_yABOFEe-W8ZKxE9676w" type="5004"/>
@@ -8626,7 +8752,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_RN_yAxOFEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_RN_K8ROFEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RN_K8hOFEe-W8ZKxE9676w" x="550" y="364"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RN_K8hOFEe-W8ZKxE9676w" x="410" y="109"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_UpvgIBOFEe-W8ZKxE9676w" type="3009" element="_UpoychOFEe-W8ZKxE9676w">
               <children xmi:type="notation:Node" xmi:id="_UpwHMBOFEe-W8ZKxE9676w" type="5004"/>
@@ -8639,13 +8765,13 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_UpwHMxOFEe-W8ZKxE9676w"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_UpvgIROFEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpvgIhOFEe-W8ZKxE9676w" x="540" y="284"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UpvgIhOFEe-W8ZKxE9676w" x="410" y="184"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_w23SohOEEe-W8ZKxE9676w"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_w23SoxOEEe-W8ZKxE9676w"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_w22rkROEEe-W8ZKxE9676w" fontName="Noto Sans" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w22rkhOEEe-W8ZKxE9676w" width="748" height="548"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w22rkhOEEe-W8ZKxE9676w" y="-50" width="748" height="548"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_w2k-whOEEe-W8ZKxE9676w"/>
       </data>
@@ -8715,26 +8841,10 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.SimplePortDef']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.SimplePortDef']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" uid="_w202YROEEe-W8ZKxE9676w" name="Flow Type: enumOnOff">
+        <ownedElements xmi:type="diagram:DNodeListElement" uid="_w202YROEEe-W8ZKxE9676w" name="Flow Type: onOffData">
           <target xmi:type="sysadl:SimplePortDef" href="SmartCar.sysadl#//@packages[name='scPorts']/@definitions[name='engineActivationIPT']"/>
           <semanticElements xmi:type="sysadl:SimplePortDef" href="SmartCar.sysadl#//@packages[name='scPorts']/@definitions[name='engineActivationIPT']"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_w21dcBOEEe-W8ZKxE9676w" showIcon="false">
-            <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.SimplePortDef']/@subNodeMappings[name='BDD.SimplePortDef.FlowType']/@style"/>
-          </ownedStyle>
-          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.SimplePortDef']/@subNodeMappings[name='BDD.SimplePortDef.FlowType']"/>
-        </ownedElements>
-      </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_MBep2BOFEe-W8ZKxE9676w" name="&lt;&lt;in Port>>&#xA;displaDataIPT">
-        <target xmi:type="sysadl:SimplePortDef" href="SmartCar.sysadl#//@packages[name='scPorts']/@definitions[name='displaDataIPT']"/>
-        <semanticElements xmi:type="sysadl:SimplePortDef" href="SmartCar.sysadl#//@packages[name='scPorts']/@definitions[name='displaDataIPT']"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_MBfQ4BOFEe-W8ZKxE9676w" iconPath="/org.sysadl.viewpoints/icons/Property.gif" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="140,140,232">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.SimplePortDef']/@style"/>
-        </ownedStyle>
-        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.SimplePortDef']"/>
-        <ownedElements xmi:type="diagram:DNodeListElement" uid="_MBfQ4hOFEe-W8ZKxE9676w" name="Flow Type: comunicationDisplayData">
-          <target xmi:type="sysadl:SimplePortDef" href="SmartCar.sysadl#//@packages[name='scPorts']/@definitions[name='displaDataIPT']"/>
-          <semanticElements xmi:type="sysadl:SimplePortDef" href="SmartCar.sysadl#//@packages[name='scPorts']/@definitions[name='displaDataIPT']"/>
-          <ownedStyle xmi:type="diagram:Dot" uid="_MBjiUBOFEe-W8ZKxE9676w" showIcon="false">
             <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.SimplePortDef']/@subNodeMappings[name='BDD.SimplePortDef.FlowType']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.SimplePortDef']/@subNodeMappings[name='BDD.SimplePortDef.FlowType']"/>
@@ -8777,5 +8887,55 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_w2dqAROEEe-W8ZKxE9676w"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer"/>
     <target xmi:type="sysadl:Package" href="SmartCar.sysadl#//@packages[name='scPorts']"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_8Et90Bj4Ee-xPOCdR5LiOg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_8E7ZMBj4Ee-xPOCdR5LiOg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_8E8AQBj4Ee-xPOCdR5LiOg" type="Sirius" element="_8Et90Bj4Ee-xPOCdR5LiOg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_8FZTQBj4Ee-xPOCdR5LiOg" type="2002" element="_8E8nUBj4Ee-xPOCdR5LiOg">
+          <children xmi:type="notation:Node" xmi:id="_8FZ6UBj4Ee-xPOCdR5LiOg" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_8FahYBj4Ee-xPOCdR5LiOg" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_8FbIcBj4Ee-xPOCdR5LiOg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_8FbIcRj4Ee-xPOCdR5LiOg"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_8FbvgBj4Ee-xPOCdR5LiOg" type="3012" element="_8FGYUBj4Ee-xPOCdR5LiOg">
+            <children xmi:type="notation:Node" xmi:id="_8FcWkBj4Ee-xPOCdR5LiOg" type="5010">
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_8FcWkRj4Ee-xPOCdR5LiOg" x="-77" y="-154"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_8FjrUBj4Ee-xPOCdR5LiOg" type="3003" element="_8FO7MBj4Ee-xPOCdR5LiOg">
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_8FjrURj4Ee-xPOCdR5LiOg" fontName="Noto Sans"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8FjrUhj4Ee-xPOCdR5LiOg"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_8FbvgRj4Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8Fbvghj4Ee-xPOCdR5LiOg" x="-22" width="30" height="30"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_8FZTQRj4Ee-xPOCdR5LiOg" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8FZTQhj4Ee-xPOCdR5LiOg"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_8E8AQRj4Ee-xPOCdR5LiOg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_8FYsMBj4Ee-xPOCdR5LiOg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_8FYsMRj4Ee-xPOCdR5LiOg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_8E8nUBj4Ee-xPOCdR5LiOg" name=" ibd [Component] displayControllerCP" width="60" height="40">
+      <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@composite"/>
+      <semanticElements xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@composite"/>
+      <ownedBorderedNodes xmi:type="diagram:DNode" uid="_8FGYUBj4Ee-xPOCdR5LiOg" name="&lt;&lt;proxy>>&#xA;portaAlerta:alertPortIPT" tooltipText="Port portaAlerta" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@ports[name='portaAlerta']"/>
+        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@ports[name='portaAlerta']"/>
+        <ownedStyle xmi:type="diagram:Square" uid="_8FO7MBj4Ee-xPOCdR5LiOg" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/Property.gif" labelAlignment="LEFT" width="3" height="3" color="209,209,209">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']"/>
+      </ownedBorderedNodes>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_8FBf0Bj4Ee-xPOCdR5LiOg" showIcon="false" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_8EvL8Bj4Ee-xPOCdR5LiOg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer"/>
+    <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@composite"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
