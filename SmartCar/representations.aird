@@ -29,7 +29,7 @@
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_wnaOoBFFEe-UZoXKdu6J2Q" name="nfRequisites" repPath="#_wnZnkBFFEe-UZoXKdu6J2Q" changeId="1715862610326">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6kT2IB76Ee-9Q6dY6ApRAw" name="NewFullRequisiteDiagrams" repPath="#_6kPksB76Ee-9Q6dY6ApRAw" changeId="1717124851979">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_6kT2IB76Ee-9Q6dY6ApRAw" name="NewFullRequisiteDiagrams" repPath="#_6kPksB76Ee-9Q6dY6ApRAw" changeId="1717422584910">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']"/>
         <target xmi:type="sysadl:Model" href="SmartCar.sysadl#/"/>
       </ownedRepresentationDescriptors>
@@ -44,7 +44,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']"/>
         <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineCP']/@composite"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pRsEUB7lEe-XA_--gU0Ayw" name="componentesBDD" repPath="#_pRny4B7lEe-XA_--gU0Ayw" changeId="1717381266396">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_pRsEUB7lEe-XA_--gU0Ayw" name="componentesBDD" repPath="#_pRny4B7lEe-XA_--gU0Ayw" changeId="1717420873157">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']"/>
         <target xmi:type="sysadl:Package" href="SmartCar.sysadl#//@packages[name='scComponents']"/>
       </ownedRepresentationDescriptors>
@@ -52,9 +52,9 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']"/>
         <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='displayControllerCP']/@composite"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_EBHe4B7nEe-XA_--gU0Ayw" name="shoutDownIBD" repPath="#_EBG30B7nEe-XA_--gU0Ayw" changeId="1717380969395">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_EBHe4B7nEe-XA_--gU0Ayw" name="shoutDownIBD" repPath="#_EBG30B7nEe-XA_--gU0Ayw" changeId="1717421596394">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']"/>
-        <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite"/>
+        <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite"/>
       </ownedRepresentationDescriptors>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_GUrE0B8GEe-9Q6dY6ApRAw" name="dataTypesBDD" repPath="#_GUpPoB8GEe-9Q6dY6ApRAw" changeId="1717129654382">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']"/>
@@ -7558,12 +7558,12 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_pYOxMB7lEe-XA_--gU0Ayw" name="&lt;&lt;component>>&#xA;engineShoutDownCP" tooltipText="Component engineShoutDownCP" outgoingEdges="_Ci5SkCFGEe-lfdm15SQGYw _Ci6gsiFGEe-lfdm15SQGYw _Ci6gtyFGEe-lfdm15SQGYw _Ci7HwCFGEe-lfdm15SQGYw _Ci7HxSFGEe-lfdm15SQGYw" incomingEdges="_1830DCFKEe-lfdm15SQGYw _n3o3YCFNEe-lfdm15SQGYw _J0lBjCFPEe-lfdm15SQGYw _7sG1tCFPEe-lfdm15SQGYw">
-        <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']"/>
-        <semanticElements xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_pYOxMB7lEe-XA_--gU0Ayw" name="&lt;&lt;component>>&#xA;timerShoutDownCP" tooltipText="Component timerShoutDownCP" outgoingEdges="_Ci5SkCFGEe-lfdm15SQGYw _Ci6gsiFGEe-lfdm15SQGYw _Ci6gtyFGEe-lfdm15SQGYw _Ci7HwCFGEe-lfdm15SQGYw _Ci7HxSFGEe-lfdm15SQGYw" incomingEdges="_1830DCFKEe-lfdm15SQGYw _n3o3YCFNEe-lfdm15SQGYw _J0lBjCFPEe-lfdm15SQGYw _7sG1tCFPEe-lfdm15SQGYw">
+        <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']"/>
+        <semanticElements xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']"/>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_pZXZoR7lEe-XA_--gU0Ayw" name="sdPaT : alertPortIPT [1,1] " tooltipText="Port sdPaT" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaT']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaT']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaT']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaT']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_pZYnwB7lEe-XA_--gU0Ayw" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="138,226,52">
             <customFeatures>color</customFeatures>
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
@@ -7571,8 +7571,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_pZZO0B7lEe-XA_--gU0Ayw" name="sdPaL : alertPortIPT [1,1] " tooltipText="Port sdPaL" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaL']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaL']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaL']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaL']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_pZac8B7lEe-XA_--gU0Ayw" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="138,226,52">
             <customFeatures>color</customFeatures>
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
@@ -7580,8 +7580,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_pZac8h7lEe-XA_--gU0Ayw" name="sdPaO : alertPortOPT [1,1] " tooltipText="Port sdPaO" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaO']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaO']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaO']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaO']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_pZbrEB7lEe-XA_--gU0Ayw" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="239,41,41">
             <customFeatures>color</customFeatures>
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
@@ -7589,8 +7589,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_pZbrEh7lEe-XA_--gU0Ayw" name="sdPsE : engineAtivationOPT [1,1] " tooltipText="Port sdPsE" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPsE']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPsE']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPsE']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPsE']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_pZc5MB7lEe-XA_--gU0Ayw" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="239,41,41">
             <customFeatures>color</customFeatures>
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
@@ -7598,8 +7598,8 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_pZdgQR7lEe-XA_--gU0Ayw" name="sdPd : dataPortIOPT [1,1] " tooltipText="Port sdPd" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPd']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPd']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPd']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPd']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_pZeuYB7lEe-XA_--gU0Ayw" showIcon="false" labelAlignment="LEFT" width="2" height="2" color="252,175,62">
             <customFeatures>color</customFeatures>
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@borderedNodeMappings[name='BDD.ComDef.Ports']/@style"/>
@@ -7611,8 +7611,8 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']"/>
         <ownedElements xmi:type="diagram:DNodeListElement" uid="_pZfVcB7lEe-XA_--gU0Ayw" name="Configuration">
-          <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite"/>
-          <semanticElements xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite"/>
+          <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite"/>
+          <semanticElements xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite"/>
           <ownedStyle xmi:type="diagram:Dot" uid="_pZfVcR7lEe-XA_--gU0Ayw" iconPath="/org.sysadl.viewpoints/icons/Configuration.gif">
             <description xmi:type="style:DotDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@containerMappings[name='BDD']/@subContainerMappings[name='BDD.ComponentDef']/@subNodeMappings[name='BDD.CompDef.Configuration']/@style"/>
           </ownedStyle>
@@ -7672,7 +7672,7 @@
       </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Ci5SkCFGEe-lfdm15SQGYw" sourceNode="_pYOxMB7lEe-XA_--gU0Ayw" targetNode="_pX_goh7lEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']"/>
+      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Ci5SkSFGEe-lfdm15SQGYw" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Component.Composition']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Ci5SkiFGEe-lfdm15SQGYw"/>
@@ -7680,7 +7680,7 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Component.Composition']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Ci6gsiFGEe-lfdm15SQGYw" sourceNode="_pYOxMB7lEe-XA_--gU0Ayw" targetNode="_pX9EYB7lEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']"/>
+      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Ci6gsyFGEe-lfdm15SQGYw" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Component.Composition']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Ci6gtCFGEe-lfdm15SQGYw"/>
@@ -7688,7 +7688,7 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Component.Composition']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Ci6gtyFGEe-lfdm15SQGYw" sourceNode="_pYOxMB7lEe-XA_--gU0Ayw" targetNode="_pW8XwB7lEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']"/>
+      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Ci6guCFGEe-lfdm15SQGYw" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Component.Composition']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Ci6guSFGEe-lfdm15SQGYw"/>
@@ -7696,7 +7696,7 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Component.Composition']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Ci7HwCFGEe-lfdm15SQGYw" sourceNode="_pYOxMB7lEe-XA_--gU0Ayw" targetNode="_pYMU8R7lEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']"/>
+      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Ci7HwSFGEe-lfdm15SQGYw" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Component.Composition']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Ci7HwiFGEe-lfdm15SQGYw"/>
@@ -7704,7 +7704,7 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Component.Composition']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Ci7HxSFGEe-lfdm15SQGYw" sourceNode="_pYOxMB7lEe-XA_--gU0Ayw" targetNode="_pYR0gB7lEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']"/>
+      <target xmi:type="sysadl:ComponentDef" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Ci7HxiFGEe-lfdm15SQGYw" sourceArrow="FillDiamond" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.BDD']/@defaultLayer/@edgeMappings[name='BDD.Component.Composition']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Ci7HxyFGEe-lfdm15SQGYw"/>
@@ -9104,7 +9104,7 @@
               </children>
               <children xmi:type="notation:Node" xmi:id="_Oad6UCFCEe-lfdm15SQGYw" type="3001" element="_OZ7HwCFCEe-lfdm15SQGYw">
                 <children xmi:type="notation:Node" xmi:id="_OaehYCFCEe-lfdm15SQGYw" type="5001">
-                  <layoutConstraint xmi:type="notation:Location" xmi:id="_OaehYSFCEe-lfdm15SQGYw" x="-39" y="-17"/>
+                  <layoutConstraint xmi:type="notation:Location" xmi:id="_OaehYSFCEe-lfdm15SQGYw" x="21"/>
                 </children>
                 <children xmi:type="notation:Node" xmi:id="_OaiLwyFCEe-lfdm15SQGYw" type="3003" element="_OZ7u0CFCEe-lfdm15SQGYw">
                   <styles xmi:type="notation:ShapeStyle" xmi:id="_OaiLxCFCEe-lfdm15SQGYw" fontName="Noto Sans"/>
@@ -9539,49 +9539,80 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m8f-UiFFEe-lfdm15SQGYw" id="(0.5,1.0)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m8f-UyFFEe-lfdm15SQGYw" id="(0.5,0.0)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_ighnACGtEe-kPM0-7uQQlA" type="4001" element="_ib0GICGtEe-kPM0-7uQQlA" source="_OaV-gCFCEe-lfdm15SQGYw" target="_kPz18CFCEe-lfdm15SQGYw">
+          <children xmi:type="notation:Node" xmi:id="_igntoCGtEe-kPM0-7uQQlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_igntoSGtEe-kPM0-7uQQlA" x="-111" y="-13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_igo7wCGtEe-kPM0-7uQQlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_igo7wSGtEe-kPM0-7uQQlA" x="2" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_igqw8CGtEe-kPM0-7uQQlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_igqw8SGtEe-kPM0-7uQQlA" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_ighnASGtEe-kPM0-7uQQlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_ighnAiGtEe-kPM0-7uQQlA" fontName="Noto Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ighnAyGtEe-kPM0-7uQQlA" points="[0, 0, -230, 143]$[235, -138, 5, 5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_igr_ECGtEe-kPM0-7uQQlA" id="(0.1,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_vEI4kCGtEe-kPM0-7uQQlA" type="4001" element="_vCboYiGtEe-kPM0-7uQQlA" source="_cHVS8CFCEe-lfdm15SQGYw" target="_kPz18CFCEe-lfdm15SQGYw">
+          <children xmi:type="notation:Node" xmi:id="_vEKGsCGtEe-kPM0-7uQQlA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vEKGsSGtEe-kPM0-7uQQlA" x="-124" y="-23"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vEKtwCGtEe-kPM0-7uQQlA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vEKtwSGtEe-kPM0-7uQQlA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_vEKtwiGtEe-kPM0-7uQQlA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vEKtwyGtEe-kPM0-7uQQlA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_vEJfoCGtEe-kPM0-7uQQlA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_vEJfoSGtEe-kPM0-7uQQlA" fontName="Noto Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vEJfoiGtEe-kPM0-7uQQlA" points="[0, 0, -241, 16]$[241, -16, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vELU0CGtEe-kPM0-7uQQlA" id="(0.6,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_vELU0SGtEe-kPM0-7uQQlA" id="(0.0,0.35)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_EBfSUB7nEe-XA_--gU0Ayw" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_EBfSUR7nEe-XA_--gU0Ayw"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_EBWIYB7nEe-XA_--gU0Ayw" name=" ibd [Component] engineShoutDownCP" width="60" height="40">
-      <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite"/>
-      <semanticElements xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_EBWIYB7nEe-XA_--gU0Ayw" name=" ibd [Component] timerShoutDownCP" width="60" height="40">
+      <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite"/>
+      <semanticElements xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite"/>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_EBX9kB7nEe-XA_--gU0Ayw" name="&lt;&lt;proxy>>&#xA;sdPaT:alertPortIPT" tooltipText="Port sdPaT" incomingEdges="_hL1HlCFCEe-lfdm15SQGYw" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaT']"/>
-        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaT']"/>
+        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaT']"/>
+        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaT']"/>
         <ownedStyle xmi:type="diagram:Square" uid="_EBYkoB7nEe-XA_--gU0Ayw" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/Property.gif" labelAlignment="LEFT" width="3" height="3" color="209,209,209">
           <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_EBZLsR7nEe-XA_--gU0Ayw" name="&lt;&lt;proxy>>&#xA;sdPaL:alertPortIPT" tooltipText="Port sdPaL" incomingEdges="_Xxq6QCFCEe-lfdm15SQGYw" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaL']"/>
-        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaL']"/>
+        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaL']"/>
+        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaL']"/>
         <ownedStyle xmi:type="diagram:Square" uid="_EBZywB7nEe-XA_--gU0Ayw" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/Property.gif" labelAlignment="LEFT" width="3" height="3" color="209,209,209">
           <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_EBZywh7nEe-XA_--gU0Ayw" name="&lt;&lt;proxy>>&#xA;sdPaO:alertPortOPT" tooltipText="Port sdPaO" incomingEdges="_8SXQDCFCEe-lfdm15SQGYw" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaO']"/>
-        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPaO']"/>
+        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaO']"/>
+        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPaO']"/>
         <ownedStyle xmi:type="diagram:Square" uid="_EBaZ0B7nEe-XA_--gU0Ayw" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/Property.gif" labelAlignment="LEFT" width="3" height="3" color="209,209,209">
           <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_EBbA4B7nEe-XA_--gU0Ayw" name="&lt;&lt;proxy>>&#xA;sdPsE:engineAtivationOPT" tooltipText="Port sdPsE" incomingEdges="_EU6xQCFDEe-lfdm15SQGYw" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPsE']"/>
-        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPsE']"/>
+        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPsE']"/>
+        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPsE']"/>
         <ownedStyle xmi:type="diagram:Square" uid="_EBbn8B7nEe-XA_--gU0Ayw" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/Property.gif" labelAlignment="LEFT" width="3" height="3" color="209,209,209">
           <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']"/>
       </ownedBorderedNodes>
       <ownedBorderedNodes xmi:type="diagram:DNode" uid="_EBbn8h7nEe-XA_--gU0Ayw" name="&lt;&lt;proxy>>&#xA;sdPd:dataPortIOPT" tooltipText="Port sdPd" incomingEdges="_sx_5eCFCEe-lfdm15SQGYw" width="3" height="3" resizeKind="NSEW">
-        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPd']"/>
-        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@ports[name='sdPd']"/>
+        <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPd']"/>
+        <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@ports[name='sdPd']"/>
         <ownedStyle xmi:type="diagram:Square" uid="_EBcPAB7nEe-XA_--gU0Ayw" showIcon="false" iconPath="/org.sysadl.viewpoints/icons/Property.gif" labelAlignment="LEFT" width="3" height="3" color="209,209,209">
           <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@borderedNodeMappings[name='IBD.Ports']/@style"/>
         </ownedStyle>
@@ -9592,43 +9623,43 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']"/>
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_OZfC4CFCEe-lfdm15SQGYw" name="&lt;&lt;component>>&#xA;fuelSensorControlerCP:fuelSensorControlerCP [1..1]" width="15" height="7" resizeKind="NSEW">
-        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']"/>
-        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_OZpa8CFCEe-lfdm15SQGYw" name="fcp2 : alertPortOPT" outgoingEdges="_Xxq6QCFCEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp2']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp2']"/>
+        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']"/>
+        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_OZpa8CFCEe-lfdm15SQGYw" name="fcp2 : alertPortOPT" outgoingEdges="_Xxq6QCFCEe-lfdm15SQGYw _ib0GICGtEe-kPM0-7uQQlA" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp2']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp2']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_OZ2PQCFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_OZ2PQiFCEe-lfdm15SQGYw" name="fcp1 : fuelLitersOPT" outgoingEdges="_2g05zCFDEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp1']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp1']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp1']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp1']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_OZ3dYCFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_OZ4EcCFCEe-lfdm15SQGYw" name="fcp0 : fuelLitersIPT" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp0']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp0']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp0']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp0']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_OZ4rgCFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_OZ5SkSFCEe-lfdm15SQGYw" name="fcp3 : noSignalAlertOPT" outgoingEdges="_rtsHVCFDEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp3']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp3']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp3']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp3']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_OZ6gsCFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_OZ7HwCFCEe-lfdm15SQGYw" name="fcp4 : dataPortIOPT" incomingEdges="_m8McZCFFEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp4']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp4']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp4']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='fuelSensorControlerCP']/@ports[name='fcp4']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_OZ7u0CFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
@@ -9640,43 +9671,43 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_cG7DQiFCEe-lfdm15SQGYw" name="&lt;&lt;component>>&#xA;tempSensorControlerCP:tempSensorControlerCP [1..1]" width="15" height="7" resizeKind="NSEW">
-        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']"/>
-        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_cG8RYCFCEe-lfdm15SQGYw" name="tcp2 : alertPortOPT" outgoingEdges="_hL1HlCFCEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp2']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp2']"/>
+        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']"/>
+        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_cG8RYCFCEe-lfdm15SQGYw" name="tcp2 : alertPortOPT" outgoingEdges="_hL1HlCFCEe-lfdm15SQGYw _vCboYiGtEe-kPM0-7uQQlA" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp2']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp2']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_cG9fgCFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_cG9fgiFCEe-lfdm15SQGYw" name="tcp1 : mortorTempOPT" outgoingEdges="_hXB1hCFDEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp1']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp1']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp1']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp1']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_cG-GkCFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_cG-toSFCEe-lfdm15SQGYw" name="tcp0 : motorTempIPT" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp0']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp0']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp0']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp0']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_cG_7wCFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_cG_7wiFCEe-lfdm15SQGYw" name="tcp3 : noSignalAlertOPT" outgoingEdges="_VstjcCFDEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp3']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp3']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp3']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp3']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_cHBJ4CFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_cHBw8SFCEe-lfdm15SQGYw" name="tcp4 : dataPortIOPT" incomingEdges="_W04ahCFFEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp4']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp4']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp4']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='tempSensorControlerCP']/@ports[name='tcp4']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_cHC_ECFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
@@ -9688,27 +9719,27 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_kPcpkiFCEe-lfdm15SQGYw" name="&lt;&lt;component>>&#xA;displayControllerCP:displayControllerCP [1..1]" width="15" height="7" resizeKind="NSEW">
-        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='displayControllerCP']"/>
-        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='displayControllerCP']"/>
+        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='displayControllerCP']"/>
+        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='displayControllerCP']"/>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_kPd3siFCEe-lfdm15SQGYw" name="dp2 : firmwareUpdatePortIPT" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='dp2']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='dp2']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='dp2']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='dp2']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_kPfF0CFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_kPfF0iFCEe-lfdm15SQGYw" name="dp0 : displayPort" incomingEdges="_VstjcCFDEe-lfdm15SQGYw _hXB1hCFDEe-lfdm15SQGYw _rtsHVCFDEe-lfdm15SQGYw _2g05zCFDEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='dp0']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='dp0']"/>
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_kPfF0iFCEe-lfdm15SQGYw" name="dp0 : displayPort" incomingEdges="_VstjcCFDEe-lfdm15SQGYw _hXB1hCFDEe-lfdm15SQGYw _rtsHVCFDEe-lfdm15SQGYw _2g05zCFDEe-lfdm15SQGYw _ib0GICGtEe-kPM0-7uQQlA _vCboYiGtEe-kPM0-7uQQlA" width="2" height="2" resizeKind="NSEW">
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='dp0']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='dp0']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_kPlMcCFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="77,137,20">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@conditionnalStyles.0/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_kPlMciFCEe-lfdm15SQGYw" name="comunication : dataPortIOPT" outgoingEdges="_sx_5eCFCEe-lfdm15SQGYw _W04ahCFFEe-lfdm15SQGYw _fyAtlCFFEe-lfdm15SQGYw _m8McZCFFEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='comunication']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='comunication']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='comunication']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='displayControllerCP']/@ports[name='comunication']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_kPmakCFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
@@ -9720,11 +9751,11 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_5xB7tiFCEe-lfdm15SQGYw" name="&lt;&lt;component>>&#xA;beepControllerBCP:beepControllerBCP [1..1]" width="15" height="7" resizeKind="NSEW">
-        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='beepControllerBCP']"/>
-        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='beepControllerBCP']"/>
+        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='beepControllerBCP']"/>
+        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='beepControllerBCP']"/>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_5xCiwiFCEe-lfdm15SQGYw" name="bepP : alertPortIPT" outgoingEdges="_8SXQDCFCEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='beepControllerBCP']/@ports[name='bepP']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='beepControllerBCP']/@ports[name='bepP']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='beepControllerBCP']/@ports[name='bepP']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='beepControllerBCP']/@ports[name='bepP']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_5xDJ0CFCEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
@@ -9736,19 +9767,19 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNode" uid="_BivkgiFDEe-lfdm15SQGYw" name="&lt;&lt;component>>&#xA;engineCP:engineCP [1..1]" width="15" height="7" resizeKind="NSEW">
-        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='engineCP']"/>
-        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='engineCP']"/>
+        <target xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='engineCP']"/>
+        <semanticElements xmi:type="sysadl:ComponentUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='engineCP']"/>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_BiwLkSFDEe-lfdm15SQGYw" name="engP2 : engineActivationIPT" outgoingEdges="_EU6xQCFDEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='engineCP']/@ports[name='engP2']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='engineCP']/@ports[name='engP2']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='engineCP']/@ports[name='engP2']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='engineCP']/@ports[name='engP2']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_BiwyoCFDEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']"/>
         </ownedBorderedNodes>
         <ownedBorderedNodes xmi:type="diagram:DNode" uid="_BiwyoiFDEe-lfdm15SQGYw" name="engP1 : dataPortIOPT" incomingEdges="_fyAtlCFFEe-lfdm15SQGYw" width="2" height="2" resizeKind="NSEW">
-          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='engineCP']/@ports[name='engP1']"/>
-          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@components[name='engineCP']/@ports[name='engP1']"/>
+          <target xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='engineCP']/@ports[name='engP1']"/>
+          <semanticElements xmi:type="sysadl:PortUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@components[name='engineCP']/@ports[name='engP1']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_BixZsCFDEe-lfdm15SQGYw" showIcon="false" width="2" height="2" color="204,242,166">
             <description xmi:type="style:SquareDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@containerMappings[name='IBD.Config']/@subNodeMappings[name='IBD.Component%20']/@borderedNodeMappings[name='IBD.Component.PortUse']/@style"/>
           </ownedStyle>
@@ -9761,8 +9792,8 @@
       </ownedDiagramElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Xxq6QCFCEe-lfdm15SQGYw" sourceNode="_OZpa8CFCEe-lfdm15SQGYw" targetNode="_EBZLsR7nEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.0"/>
-      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.0"/>
+      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.0"/>
+      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Xxq6QSFCEe-lfdm15SQGYw" lineStyle="dash" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Xxq6QiFCEe-lfdm15SQGYw"/>
@@ -9770,8 +9801,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hL1HlCFCEe-lfdm15SQGYw" sourceNode="_cG8RYCFCEe-lfdm15SQGYw" targetNode="_EBX9kB7nEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.1"/>
-      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.1"/>
+      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.1"/>
+      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hL1HlSFCEe-lfdm15SQGYw" lineStyle="dash" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hL1HliFCEe-lfdm15SQGYw"/>
@@ -9779,8 +9810,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_sx_5eCFCEe-lfdm15SQGYw" sourceNode="_kPlMciFCEe-lfdm15SQGYw" targetNode="_EBbn8h7nEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.2"/>
-      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.2"/>
+      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.2"/>
+      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_syAggCFCEe-lfdm15SQGYw" lineStyle="dash" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_syAggSFCEe-lfdm15SQGYw"/>
@@ -9788,8 +9819,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_8SXQDCFCEe-lfdm15SQGYw" sourceNode="_5xCiwiFCEe-lfdm15SQGYw" targetNode="_EBZywh7nEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.3"/>
-      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.3"/>
+      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.3"/>
+      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.3"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_8SXQDSFCEe-lfdm15SQGYw" lineStyle="dash" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_8SXQDiFCEe-lfdm15SQGYw"/>
@@ -9797,8 +9828,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_EU6xQCFDEe-lfdm15SQGYw" sourceNode="_BiwLkSFDEe-lfdm15SQGYw" targetNode="_EBbA4B7nEe-XA_--gU0Ayw">
-      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.4"/>
-      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@delegations.4"/>
+      <target xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.4"/>
+      <semanticElements xmi:type="sysadl:Delegation" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@delegations.4"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_EU6xQSFDEe-lfdm15SQGYw" lineStyle="dash" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_EU6xQiFDEe-lfdm15SQGYw"/>
@@ -9806,8 +9837,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Delegation']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_VstjcCFDEe-lfdm15SQGYw" name="sdc1 : noSignalConector" sourceNode="_cG_7wiFCEe-lfdm15SQGYw" targetNode="_kPfF0iFCEe-lfdm15SQGYw">
-      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc1']"/>
-      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc1']"/>
+      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc1']"/>
+      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc1']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_VsuKgCFDEe-lfdm15SQGYw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_VsuKgSFDEe-lfdm15SQGYw" showIcon="false"/>
@@ -9815,8 +9846,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_hXB1hCFDEe-lfdm15SQGYw" name="sdc2 : connectTemperature" sourceNode="_cG9fgiFCEe-lfdm15SQGYw" targetNode="_kPfF0iFCEe-lfdm15SQGYw">
-      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc2']"/>
-      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc2']"/>
+      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc2']"/>
+      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc2']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_hXB1hSFDEe-lfdm15SQGYw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_hXB1hiFDEe-lfdm15SQGYw" showIcon="false"/>
@@ -9824,8 +9855,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_rtsHVCFDEe-lfdm15SQGYw" name="sdc3 : noSignalConector" sourceNode="_OZ5SkSFCEe-lfdm15SQGYw" targetNode="_kPfF0iFCEe-lfdm15SQGYw">
-      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc3']"/>
-      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc3']"/>
+      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc3']"/>
+      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc3']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_rtsHVSFDEe-lfdm15SQGYw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_rtsHViFDEe-lfdm15SQGYw" showIcon="false"/>
@@ -9833,8 +9864,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_2g05zCFDEe-lfdm15SQGYw" name="sdc4 : conectLiters" sourceNode="_OZ2PQiFCEe-lfdm15SQGYw" targetNode="_kPfF0iFCEe-lfdm15SQGYw">
-      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc4']"/>
-      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc4']"/>
+      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc4']"/>
+      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc4']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_2g1g0CFDEe-lfdm15SQGYw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_2g1g0SFDEe-lfdm15SQGYw" showIcon="false"/>
@@ -9842,8 +9873,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_W04ahCFFEe-lfdm15SQGYw" name="sdc5 : dataConnector" sourceNode="_kPlMciFCEe-lfdm15SQGYw" targetNode="_cHBw8SFCEe-lfdm15SQGYw">
-      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc5']"/>
-      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc5']"/>
+      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc5']"/>
+      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc5']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_W05BkCFFEe-lfdm15SQGYw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_W05BkSFFEe-lfdm15SQGYw" showIcon="false"/>
@@ -9851,8 +9882,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fyAtlCFFEe-lfdm15SQGYw" name="sdc6 : dataConnector" sourceNode="_kPlMciFCEe-lfdm15SQGYw" targetNode="_BiwyoiFDEe-lfdm15SQGYw">
-      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc6']"/>
-      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc6']"/>
+      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc6']"/>
+      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc6']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fyAtlSFFEe-lfdm15SQGYw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fyAtliFFEe-lfdm15SQGYw" showIcon="false"/>
@@ -9860,18 +9891,36 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_m8McZCFFEe-lfdm15SQGYw" name="sdc7 : dataConnector" sourceNode="_kPlMciFCEe-lfdm15SQGYw" targetNode="_OZ7HwCFCEe-lfdm15SQGYw">
-      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc7']"/>
-      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite/@connectors[name='sdc7']"/>
+      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc7']"/>
+      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='sdc7']"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_m8McZSFFEe-lfdm15SQGYw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_m8McZiFFEe-lfdm15SQGYw" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']"/>
     </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ib0GICGtEe-kPM0-7uQQlA" name="alLConDis : connectAlerts" sourceNode="_OZpa8CFCEe-lfdm15SQGYw" targetNode="_kPfF0iFCEe-lfdm15SQGYw">
+      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='alLConDis']"/>
+      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='alLConDis']"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ib0tMCGtEe-kPM0-7uQQlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ib0tMSGtEe-kPM0-7uQQlA" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_vCboYiGtEe-kPM0-7uQQlA" name="alTConDis : connectAlerts" sourceNode="_cG8RYCFCEe-lfdm15SQGYw" targetNode="_kPfF0iFCEe-lfdm15SQGYw">
+      <target xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='alTConDis']"/>
+      <semanticElements xmi:type="sysadl:ConnectorUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite/@connectors[name='alTConDis']"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_vCcPcCGtEe-kPM0-7uQQlA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_vCcPcSGtEe-kPM0-7uQQlA" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer/@edgeMappings[name='IBD.Connectors']"/>
+    </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_EBG30R7nEe-XA_--gU0Ayw"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Structural']/@ownedRepresentations[name='SysADL.IBD']/@defaultLayer"/>
-    <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='engineShoutDownCP']/@composite"/>
+    <target xmi:type="sysadl:Configuration" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='timerShoutDownCP']/@composite"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_6kPksB76Ee-9Q6dY6ApRAw">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_6ky-UB76Ee-9Q6dY6ApRAw" source="GMF_DIAGRAMS">
@@ -9894,7 +9943,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_6ofykh76Ee-9Q6dY6ApRAw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6ocvQR76Ee-9Q6dY6ApRAw" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6ocvQh76Ee-9Q6dY6ApRAw" x="5430" y="139"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6ocvQh76Ee-9Q6dY6ApRAw" x="3370" y="469"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_6oiO0B76Ee-9Q6dY6ApRAw" type="3009" element="_6lb3gB76Ee-9Q6dY6ApRAw">
               <children xmi:type="notation:Node" xmi:id="_6ojc8B76Ee-9Q6dY6ApRAw" type="5004"/>
@@ -9928,7 +9977,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_6olSIx76Ee-9Q6dY6ApRAw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6okrER76Ee-9Q6dY6ApRAw" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6okrEh76Ee-9Q6dY6ApRAw" x="4955" y="139"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6okrEh76Ee-9Q6dY6ApRAw" x="2895" y="469"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_6omgQB76Ee-9Q6dY6ApRAw" type="3009" element="_6lgI8B76Ee-9Q6dY6ApRAw">
               <children xmi:type="notation:Node" xmi:id="_6onHUB76Ee-9Q6dY6ApRAw" type="5004"/>
@@ -9945,7 +9994,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_6onHUx76Ee-9Q6dY6ApRAw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6omgQR76Ee-9Q6dY6ApRAw" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6omgQh76Ee-9Q6dY6ApRAw" x="4500" y="139"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6omgQh76Ee-9Q6dY6ApRAw" x="2440" y="469"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_6onuYB76Ee-9Q6dY6ApRAw" type="3009" element="_6lhXEB76Ee-9Q6dY6ApRAw">
               <children xmi:type="notation:Node" xmi:id="_6ooVcB76Ee-9Q6dY6ApRAw" type="5004"/>
@@ -9996,7 +10045,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_6or_0h76Ee-9Q6dY6ApRAw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6oqKoR76Ee-9Q6dY6ApRAw" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6oqKoh76Ee-9Q6dY6ApRAw" x="30" y="29"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6oqKoh76Ee-9Q6dY6ApRAw" x="2685" y="264"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_6osm4B76Ee-9Q6dY6ApRAw" type="3009" element="_6lmPkB76Ee-9Q6dY6ApRAw">
               <children xmi:type="notation:Node" xmi:id="_6oucEB76Ee-9Q6dY6ApRAw" type="5004"/>
@@ -10030,7 +10079,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_6ovqMx76Ee-9Q6dY6ApRAw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6ovDIR76Ee-9Q6dY6ApRAw" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6ovDIh76Ee-9Q6dY6ApRAw" x="4925" y="29"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6ovDIh76Ee-9Q6dY6ApRAw" x="2865" y="359"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_6owRQB76Ee-9Q6dY6ApRAw" type="3009" element="_6lp58B76Ee-9Q6dY6ApRAw">
               <children xmi:type="notation:Node" xmi:id="_6ow4UB76Ee-9Q6dY6ApRAw" type="5004"/>
@@ -10064,7 +10113,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_6oyGcx76Ee-9Q6dY6ApRAw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6oxfYR76Ee-9Q6dY6ApRAw" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6oxfYh76Ee-9Q6dY6ApRAw" x="795" y="29"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6oxfYh76Ee-9Q6dY6ApRAw" x="3460" y="264"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_6oytgB76Ee-9Q6dY6ApRAw" type="3009" element="_6ls9QR76Ee-9Q6dY6ApRAw">
               <children xmi:type="notation:Node" xmi:id="_6ozUkB76Ee-9Q6dY6ApRAw" type="5004"/>
@@ -10081,7 +10130,7 @@
                 <styles xmi:type="notation:FilteringStyle" xmi:id="_6oz7oh76Ee-9Q6dY6ApRAw"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_6oytgR76Ee-9Q6dY6ApRAw" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6oytgh76Ee-9Q6dY6ApRAw" x="1375" y="29"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6oytgh76Ee-9Q6dY6ApRAw" x="2040" y="264"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_6oz7ox76Ee-9Q6dY6ApRAw" type="3009" element="_6luycB76Ee-9Q6dY6ApRAw">
               <children xmi:type="notation:Node" xmi:id="_6o1JwB76Ee-9Q6dY6ApRAw" type="5004"/>
@@ -10121,7 +10170,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_6oX2wh76Ee-9Q6dY6ApRAw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_6oKbYB76Ee-9Q6dY6ApRAw" fontName="Noto Sans" fontHeight="8"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6oKbYR76Ee-9Q6dY6ApRAw"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6oKbYR76Ee-9Q6dY6ApRAw" height="633"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_6kzlYR76Ee-9Q6dY6ApRAw"/>
         <edges xmi:type="notation:Edge" xmi:id="_6pR1sB76Ee-9Q6dY6ApRAw" type="4001" element="_6nfF8B76Ee-9Q6dY6ApRAw" source="_6ocvQB76Ee-9Q6dY6ApRAw" target="_6ovDIB76Ee-9Q6dY6ApRAw">
@@ -10264,7 +10313,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lMm8B76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;motorTempSensorFR" outgoingEdges="_6nfF8B76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lMm8B76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;measureMotorTemperatureFR" outgoingEdges="_6nfF8B76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1.3"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1.3"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lapYB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
@@ -10288,7 +10337,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lb3gB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;motorControlFR" incomingEdges="_6n4ukB76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lb3gB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;changeMotorStateFR" incomingEdges="_6n4ukB76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lcekB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
@@ -10312,7 +10361,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6leTwB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;fuelSensorFR" outgoingEdges="_6nvkoB76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6leTwB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;measureFuelLevelFR" outgoingEdges="_6nvkoB76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1.2.1"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1.2.1"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6le60B76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
@@ -10336,7 +10385,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lgI8B76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;baterySensorFR" outgoingEdges="_6nxZ0B76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lgI8B76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;measureBaterryLevelFR" outgoingEdges="_6nxZ0B76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#2.1"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#2.1"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lgwAB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
@@ -10360,7 +10409,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lhXEB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;statusDisplayFR" incomingEdges="_6n1EMB76Ee-9Q6dY6ApRAw _6n2SUB76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lhXEB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;showStatusVisualyFR" incomingEdges="_6n1EMB76Ee-9Q6dY6ApRAw _6n2SUB76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#2"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#2"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lh-IB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
@@ -10384,7 +10433,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lilMR76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;engineActivationDeviceFR" incomingEdges="_6n3gcB76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lilMR76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;driverActivateEngineFR" incomingEdges="_6n3gcB76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1.1"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1.1"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6ljMQB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
@@ -10408,7 +10457,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lkaYB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;AutoTurnOffFR">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lkaYB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;shoutDownAfterTimeFR">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1.2"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#1.2"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6llBcB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
@@ -10432,7 +10481,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lmPkB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;beepAlarmFR" incomingEdges="_6nzPAB76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lmPkB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;audibleAlertsFR" incomingEdges="_6nzPAB76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lm2oB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
@@ -10456,10 +10505,12 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lndsR76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;sensorPerformanceNFR" incomingEdges="_6nfF8B76Ee-9Q6dY6ApRAw _6nvkoB76Ee-9Q6dY6ApRAw _6nxZ0B76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lndsR76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;fastUpdateStatusNFR" incomingEdges="_6nfF8B76Ee-9Q6dY6ApRAw _6nvkoB76Ee-9Q6dY6ApRAw _6nxZ0B76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.0"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.0"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lor0B76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lor0B76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <customFeatures>backgroundColor</customFeatures>
+          <customFeatures>foregroundColor</customFeatures>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']"/>
@@ -10480,10 +10531,12 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lp58B76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;alarmPerformanceNFT" outgoingEdges="_6nzPAB76Ee-9Q6dY6ApRAw _6n1EMB76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lp58B76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;fastUpdateAlarmNFT" outgoingEdges="_6nzPAB76Ee-9Q6dY6ApRAw _6n1EMB76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.1"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.1"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lqhAB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lqhAB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <customFeatures>backgroundColor</customFeatures>
+          <customFeatures>foregroundColor</customFeatures>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']"/>
@@ -10504,10 +10557,12 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lrvIB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;compatibilityNFR">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lrvIB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;beCompatibileNFR">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.2"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.2"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lsWMB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lsWMB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <customFeatures>backgroundColor</customFeatures>
+          <customFeatures>foregroundColor</customFeatures>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']"/>
@@ -10528,10 +10583,12 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6ls9QR76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;upgradabilityNFR">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6ls9QR76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;beUpgradeableNFR">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.3"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.3"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6luLYB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6luLYB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <customFeatures>backgroundColor</customFeatures>
+          <customFeatures>foregroundColor</customFeatures>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']"/>
@@ -10552,10 +10609,12 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6luycB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;failureDetectionNFT" outgoingEdges="_6n2SUB76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6luycB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;detectFailuresNFT" outgoingEdges="_6n2SUB76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.4"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.4"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lvZgB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lvZgB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <customFeatures>backgroundColor</customFeatures>
+          <customFeatures>foregroundColor</customFeatures>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']"/>
@@ -10576,10 +10635,12 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@subNodeMappings[name='SysADL.Req.Text']"/>
         </ownedElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lwnoB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;securityNFR" outgoingEdges="_6n3gcB76Ee-9Q6dY6ApRAw _6n4ukB76Ee-9Q6dY6ApRAw">
+      <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_6lwnoB76Ee-9Q6dY6ApRAw" name="&lt;&lt;requirement>>&#xA;beSecureNFR" outgoingEdges="_6n3gcB76Ee-9Q6dY6ApRAw _6n4ukB76Ee-9Q6dY6ApRAw">
         <target xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.5"/>
         <semanticElements xmi:type="sysadl:Requirement" href="SmartCar.sysadl#3.5"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lxOsB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_6lxOsB76Ee-9Q6dY6ApRAw" showIcon="false" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,255,255">
+          <customFeatures>backgroundColor</customFeatures>
+          <customFeatures>foregroundColor</customFeatures>
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Requirements']/@ownedRepresentations[name='SysADL.Requirements.Main']/@defaultLayer/@containerMappings[name='SysADL.Req.Self']/@subContainerMappings[name='SysADL.Req.Requirement']"/>

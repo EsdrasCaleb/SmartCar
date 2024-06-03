@@ -6,48 +6,48 @@ package SysADL.types {
 	value type Void { } 
 	value type Real { }
 } 
-Requirement motorTempSensorFR ( 1.3 ) { 
+Requirement measureMotorTemperatureFR ( 1.3 ) { 
 	text = "O sensor deve monitorar continuamente a temperatura e detectar quando excede 100 graus celsius"
-derive sensorPerformanceNFR ; } 
-Requirement motorControlFR ( 1 ) { 
+derive fastUpdateStatusNFR ; } 
+Requirement changeMotorStateFR ( 1 ) { 
 	text = "Capacidade de Ligar e Desligar o Motor"
-} Requirement fuelSensorFR ( 1.2.1 ) { 
+} Requirement measureFuelLevelFR ( 1.2.1 ) { 
 	text = "Monitora a quantidade de combustivel e detecta se está abaixo de 2 litros"
-derive sensorPerformanceNFR ; } 
-Requirement baterySensorFR ( 2.1 ) { 
+derive fastUpdateStatusNFR ; } 
+Requirement measureBaterryLevelFR ( 2.1 ) { 
 	text = "Acompanha a carga da bateria e identifica quando está abaixo de 20%" 
-	derive  sensorPerformanceNFR ; } 
-Requirement statusDisplayFR ( 2 ) { 
+	derive  fastUpdateStatusNFR ; } 
+Requirement showStatusVisualyFR ( 2 ) { 
 	text = "Avisa visualmente o motorista o estado do sistema e exibe alertas visuais"
 } 
-Requirement engineActivationDeviceFR ( 1.1 ) { 
+Requirement driverActivateEngineFR ( 1.1 ) { 
 	text = "Dispositivo acionado pelo usuário para ligar o motor" 
 } 
  
-Requirement AutoTurnOffFR ( 1.2 ) { 
+Requirement shoutDownAfterTimeFR ( 1.2 ) { 
 	text = "Desligar o motor se uma das condições energenciais do sensor de temperatura ou combustivel forem satisfeitas por 2 minutos continuos"
 } 
-Requirement beepAlarmFR ( 3 ) { text = "Faz um barulho para alertar o usuário" } 
-Requirement sensorPerformanceNFR ( 3.0 ) { 
+Requirement audibleAlertsFR ( 3 ) { text = "Faz um barulho para alertar o usuário" } 
+Requirement fastUpdateStatusNFR ( 3.0 ) { 
 	text = "Os sensores devem ter uma resposta atualização de estado de no máximo 2 segundos"
 } 
-Requirement alarmPerformanceNFT ( 3.1 ) { 
+Requirement fastUpdateAlarmNFT ( 3.1 ) { 
 	text = "O sistema deve responder com o alarme no máximo em 0.1 segundos após detectar condições críticas" 
-	derive beepAlarmFR , statusDisplayFR ;
+	derive audibleAlertsFR , showStatusVisualyFR ;
 } 
-Requirement compatibilityNFR ( 3.2 ) { 
+Requirement beCompatibileNFR ( 3.2 ) { 
 	text = "O sistema deve ser capaz de ser conectado em diferentes veículos independente do fabricante."
 } 
-Requirement upgradabilityNFR ( 3.3 ) { 
+Requirement beUpgradeableNFR ( 3.3 ) { 
 	text = "O sistema deve ser suportar updates de firmware para possíveis correções no software em casos de necessidade."
 } 
-Requirement failureDetectionNFT ( 3.4 ) { 
+Requirement detectFailuresNFT ( 3.4 ) { 
 	text = "O sistema deve detectar caso algum sensor ou componente esteja apresentando falhas. E exibir elas ao usuário no status display." 
-	derive statusDisplayFR ;
+	derive showStatusVisualyFR ;
 } 
-Requirement securityNFR ( 3.5 ) { 
+Requirement beSecureNFR ( 3.5 ) { 
 	text = "O sistema deve bloquear acessos indevidos ao sistema e modificações nos componentes dele. Toda a comunicação de não críticos (não provenientes diretamente do sensor) deve ser criptografada."
-	derive engineActivationDeviceFR,motorControlFR
+	derive driverActivateEngineFR,changeMotorStateFR
 ; } 
 package dataTypes { 
 	import SysADL.types ; 
@@ -92,25 +92,25 @@ package scPorts {
 		comunication : dataPortIOPT [ 1 , 5 ] ; 
 		configuration { 
 			components :  
-			 baterySensorControlerCP : baterySensorControlerCP { using ports : bcp0 : bateryLevelIPT ; bcp2 : bateryLevelOPT ; bcp1 : noSignalAlertOPT ; bcp3 : dataPortIOPT ; bcp4 : alertPortOPT ; } tempSensorControlerCP : tempSensorControlerCP { using ports : tcp2 : alertPortOPT ; tcp1 : mortorTempOPT ; tcp0 : motorTempIPT ; tcp3 : noSignalAlertOPT ; tcp4 : dataPortIOPT ; } fuelSensorControlerCP : fuelSensorControlerCP { using ports : fcp2 : alertPortOPT ; fcp1 : fuelLitersOPT ; fcp0 : fuelLitersIPT ; fcp3 : noSignalAlertOPT ; fcp4 : dataPortIOPT ; } engineCP : engineCP { using ports : engP2 : engineActivationIPT ; engP1 : dataPortIOPT ; } engineShoutDownCP : engineShoutDownCP { using ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; } connectors : dc1 : connectAlerts bindings fcp2 = sdPaL ; dc2 : connectAlerts bindings tcp2 = sdPaT ; dc3 : actvationConector bindings sdPsE = engP2 ; delegations : bcp3 to comunication bcp4 to bateryAlert bcp2 to bateryStatus bcp1 to baterySignal tcp4 to comunication tcp1 to tempStatus tcp2 to tempAlert tcp3 to motorSignal fcp1 to fuelStatus fcp2 to litersAlert fcp3 to fuelSignal fcp4 to comunication engP1 to comunication sdPd to comunication }
+			 baterySensorControlerCP : baterySensorControlerCP { using ports : bcp0 : bateryLevelIPT ; bcp2 : bateryLevelOPT ; bcp1 : noSignalAlertOPT ; bcp3 : dataPortIOPT ; bcp4 : alertPortOPT ; } tempSensorControlerCP : tempSensorControlerCP { using ports : tcp2 : alertPortOPT ; tcp1 : mortorTempOPT ; tcp0 : motorTempIPT ; tcp3 : noSignalAlertOPT ; tcp4 : dataPortIOPT ; } fuelSensorControlerCP : fuelSensorControlerCP { using ports : fcp2 : alertPortOPT ; fcp1 : fuelLitersOPT ; fcp0 : fuelLitersIPT ; fcp3 : noSignalAlertOPT ; fcp4 : dataPortIOPT ; } engineCP : engineCP { using ports : engP2 : engineActivationIPT ; engP1 : dataPortIOPT ; } engineShoutDownCP : timerShoutDownCP { using ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; } connectors : dc1 : connectAlerts bindings fcp2 = sdPaL ; dc2 : connectAlerts bindings tcp2 = sdPaT ; dc3 : actvationConector bindings sdPsE = engP2 ; delegations : bcp3 to comunication bcp4 to bateryAlert bcp2 to bateryStatus bcp1 to baterySignal tcp4 to comunication tcp1 to tempStatus tcp2 to tempAlert tcp3 to motorSignal fcp1 to fuelStatus fcp2 to litersAlert fcp3 to fuelSignal fcp4 to comunication engP1 to comunication sdPd to comunication }
 	}
-	component def tempSensorControlerCP { ports : tcp2 : alertPortOPT [ 1 , 2 ] ; tcp1 : mortorTempOPT ; tcp0 : motorTempIPT ; tcp3 : noSignalAlertOPT ; tcp4 : dataPortIOPT ; configuration { components : engineTempSensorBCP : engineTempSensorBCP { using ports : tsP0 : mortorTempOPT ; } displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } engineShoutDownCP : engineShoutDownCP { using ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; } connectors : tsc1 : dataConnector bindings sdPd = comunication ; delegations : tsP0 to tcp0 comunication to tcp4 dp0 to tcp1 dp0 to tcp2 dp0 to tcp3 sdPaT to tcp2 } }
-	component def fuelSensorControlerCP { ports : fcp2 : alertPortOPT [ 1 , 2 ] ; fcp1 : fuelLitersOPT ; fcp0 : fuelLitersIPT ; fcp3 : noSignalAlertOPT ; fcp4 : dataPortIOPT ; configuration { components : fuelSensorBCP : fuelSensorBCP { using ports : fsP0 : fuelLitersOPT ; } displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } engineShoutDownCP : engineShoutDownCP { using ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; } connectors : fsc1 : dataConnector bindings sdPd = comunication ; delegations : fsP0 to fcp0 comunication to fcp4 dp0 to fcp1 dp0 to fcp2 dp0 to fcp3 sdPaL to fcp2 } }
+	component def tempSensorControlerCP { ports : tcp2 : alertPortOPT [ 1 , 2 ] ; tcp1 : mortorTempOPT ; tcp0 : motorTempIPT ; tcp3 : noSignalAlertOPT ; tcp4 : dataPortIOPT ; configuration { components : engineTempSensorBCP : engineTempSensorBCP { using ports : tsP0 : mortorTempOPT ; } displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } engineShoutDownCP : timerShoutDownCP { using ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; } connectors : tsc1 : dataConnector bindings sdPd = comunication ; delegations : tsP0 to tcp0 comunication to tcp4 dp0 to tcp1 dp0 to tcp2 dp0 to tcp3 sdPaT to tcp2 } }
+	component def fuelSensorControlerCP { ports : fcp2 : alertPortOPT [ 1 , 2 ] ; fcp1 : fuelLitersOPT ; fcp0 : fuelLitersIPT ; fcp3 : noSignalAlertOPT ; fcp4 : dataPortIOPT ; configuration { components : fuelSensorBCP : fuelSensorBCP { using ports : fsP0 : fuelLitersOPT ; } displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } engineShoutDownCP : timerShoutDownCP { using ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; } connectors : fsc1 : dataConnector bindings sdPd = comunication ; delegations : fsP0 to fcp0 comunication to fcp4 dp0 to fcp1 dp0 to fcp2 dp0 to fcp3 sdPaL to fcp2 } }
 	component def baterySensorControlerCP { ports :  bcp0 : bateryLevelIPT ; bcp2 : bateryLevelOPT ; bcp1 : noSignalAlertOPT ; bcp3 : dataPortIOPT ; bcp4 : alertPortOPT ; configuration { components : baterySensorBCP : baterySensorBCP { using ports : bsp0 : bateryLevelOPT ; } displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } beepControllerBCP : beepControllerBCP { using ports : bepP : alertPortIPT ; } delegations : bsp0 to bcp0 bepP to bcp4 dp0 to bcp2 dp0 to bcp1 comunication to bcp3 } } boundary
 	component def baterySensorBCP { ports : bsp0 : bateryLevelOPT ; } boundary
 	component def fuelSensorBCP { ports : fsP0 : fuelLitersOPT ; } boundary
 	component def engineTempSensorBCP { ports : tsP0 : mortorTempOPT ; } boundary
 	component def beepControllerBCP { ports : bepP : alertPortIPT [ 1 , 2 ] ; }
-	component def engineShoutDownCP { 
+	component def timerShoutDownCP { 
 		ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; 
 		configuration { 
 			
-		components : fuelSensorControlerCP : fuelSensorControlerCP { using ports : fcp2 : alertPortOPT ; fcp1 : fuelLitersOPT ; fcp0 : fuelLitersIPT ; fcp3 : noSignalAlertOPT ; fcp4 : dataPortIOPT ; } tempSensorControlerCP : tempSensorControlerCP { using ports : tcp2 : alertPortOPT ; tcp1 : mortorTempOPT ; tcp0 : motorTempIPT ; tcp3 : noSignalAlertOPT ; tcp4 : dataPortIOPT ; } displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } beepControllerBCP : beepControllerBCP { using ports : bepP : alertPortIPT ; } engineCP : engineCP { using ports : engP2 : engineActivationIPT ; engP1 : dataPortIOPT ; } connectors : sdc1 : noSignalConector bindings tcp3 = dp0 ; sdc2 : connectTemperature bindings tcp1 = dp0 ; sdc3 : noSignalConector bindings fcp3 = dp0 ; sdc4 : conectLiters bindings fcp1 = dp0 ; sdc5 : dataConnector bindings comunication = tcp4 ; sdc6 : dataConnector bindings comunication = engP1 ; sdc7 : dataConnector bindings comunication = fcp4 ; delegations : fcp2 to sdPaL tcp2 to sdPaT comunication to sdPd bepP to sdPaO engP2 to sdPsE }
+		components : fuelSensorControlerCP : fuelSensorControlerCP { using ports : fcp2 : alertPortOPT ; fcp1 : fuelLitersOPT ; fcp0 : fuelLitersIPT ; fcp3 : noSignalAlertOPT ; fcp4 : dataPortIOPT ; } tempSensorControlerCP : tempSensorControlerCP { using ports : tcp2 : alertPortOPT ; tcp1 : mortorTempOPT ; tcp0 : motorTempIPT ; tcp3 : noSignalAlertOPT ; tcp4 : dataPortIOPT ; } displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } beepControllerBCP : beepControllerBCP { using ports : bepP : alertPortIPT ; } engineCP : engineCP { using ports : engP2 : engineActivationIPT ; engP1 : dataPortIOPT ; } connectors : sdc1 : noSignalConector bindings tcp3 = dp0 ; sdc2 : connectTemperature bindings tcp1 = dp0 ; sdc3 : noSignalConector bindings fcp3 = dp0 ; sdc4 : conectLiters bindings fcp1 = dp0 ; sdc5 : dataConnector bindings comunication = tcp4 ; sdc6 : dataConnector bindings comunication = engP1 ; sdc7 : dataConnector bindings comunication = fcp4 ; alLConDis : connectAlerts bindings fcp2 = dp0 ; alTConDis : connectAlerts bindings tcp2 = dp0 ; delegations : fcp2 to sdPaL tcp2 to sdPaT comunication to sdPd bepP to sdPaO engP2 to sdPsE }
 	}
 	component def engineCP { 
 		ports : engP2 : engineActivationIPT [ 1 , 2 ] ; engP1 : dataPortIOPT ; 
 		configuration { 
-			components :     displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } inginitionBCP : inginitionBCP { using ports : ignP0 : engineAtivationOPT ; } engineShoutDownCP : engineShoutDownCP { using ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; } connectors : ec1 : dataConnector bindings comunication = sdPd ; delegations : comunication to engP1 sdPsE to engP2 ignP0 to engP2 }
+			components :     displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } inginitionBCP : inginitionBCP { using ports : ignP0 : engineAtivationOPT ; } engineShoutDownCP : timerShoutDownCP { using ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; } connectors : ec1 : dataConnector bindings comunication = sdPd ; delegations : comunication to engP1 sdPsE to engP2 ignP0 to engP2 }
 	} boundary
 	component def inginitionBCP { 
 		ports : ignP0 : engineAtivationOPT ;  
