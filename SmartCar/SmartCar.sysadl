@@ -82,7 +82,7 @@ package scPorts {
 	 	baterySignal: noSignalAlertIPT;
 	 }  
 	 port def firmwareUpdatePortIPT { flow in byteStream } connector def connectTemperature { participants : ~ ^out : mortorTempOPT ; ~ ^in : motorTempIPT ; } connector def connectAlerts { participants : ~ ^in : alertPortIPT ; ~ ^out : alertPortOPT ; } connector def conectLiters { participants : ~ ^out : fuelLitersOPT ; ~ ^in : fuelLitersIPT ; } connector def porcentConnect { participants : ~ ^out : bateryLevelOPT ; ~ ^in : bateryLevelIPT ; } connector def actvationConector { participants : ~ ^out : engineAtivationOPT ; ~ ^in : engineActivationIPT ; } connector def noSignalConector { participants : ~ ^out : noSignalAlertOPT ; ~ ^in : noSignalAlertIPT ; } 
- }
+ connector def dataConnector { participants : ~ dataP1 : dataPortIOPT ; ~ newPort : dataPortIOPT ; } }
  package scComponents { 
 	import SysADL.types ;  import scPorts ;
 	component def displayControllerCP { 
@@ -96,7 +96,7 @@ package scPorts {
 	}
 	component def tempSensorControlerCP { ports : tcp2 : alertPortOPT [ 1 , 2 ] ; tcp1 : mortorTempOPT ; tcp0 : motorTempIPT ; tcp3 : noSignalAlertOPT ; tcp4 : dataPortIOPT ; configuration { } }
 	component def fuelSensorControlerCP { ports : fcp2 : alertPortOPT [ 1 , 2 ] ; fcp1 : fuelLitersOPT ; fcp0 : fuelLitersIPT ; fcp3 : noSignalAlertOPT ; fcp4 : dataPortIOPT ; configuration { } }
-	component def baterySensorControlerCP { ports :  bcp0 : bateryLevelIPT ; bcp2 : bateryLevelOPT ; bcp1 : noSignalAlertOPT ; bcp3 : dataPortIOPT ; bcp4 : alertPortOPT ; configuration { } } boundary
+	component def baterySensorControlerCP { ports :  bcp0 : bateryLevelIPT ; bcp2 : bateryLevelOPT ; bcp1 : noSignalAlertOPT ; bcp3 : dataPortIOPT ; bcp4 : alertPortOPT ; configuration { components : baterySensorBCP : baterySensorBCP { using ports : bsp0 : bateryLevelOPT ; } delegations : bsp0 to bcp0 } } boundary
 	component def baterySensorBCP { ports : bsp0 : bateryLevelOPT ; } boundary
 	component def fuelSensorBCP { ports : fsP0 : fuelLitersOPT ; } boundary
 	component def engineTempSensorBCP { ports : tsP0 : mortorTempOPT ; } boundary
@@ -105,12 +105,12 @@ package scPorts {
 		ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; 
 		configuration { 
 			
-		}
+		components : fuelSensorControlerCP : fuelSensorControlerCP { using ports : fcp2 : alertPortOPT ; fcp1 : fuelLitersOPT ; fcp0 : fuelLitersIPT ; fcp3 : noSignalAlertOPT ; fcp4 : dataPortIOPT ; } tempSensorControlerCP : tempSensorControlerCP { using ports : tcp2 : alertPortOPT ; tcp1 : mortorTempOPT ; tcp0 : motorTempIPT ; tcp3 : noSignalAlertOPT ; tcp4 : dataPortIOPT ; } displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } beepControllerBCP : beepControllerBCP { using ports : bepP : alertPortIPT ; } engineCP : engineCP { using ports : engP2 : engineActivationIPT ; engP1 : dataPortIOPT ; } connectors : sdc1 : noSignalConector bindings tcp3 = dp0 ; sdc2 : connectTemperature bindings tcp1 = dp0 ; sdc3 : noSignalConector bindings fcp3 = dp0 ; sdc4 : conectLiters bindings fcp1 = dp0 ; sdc5 : dataConnector bindings comunication = tcp4 ; sdc6 : dataConnector bindings comunication = engP1 ; sdc7 : dataConnector bindings comunication = fcp4 ; delegations : fcp2 to sdPaL tcp2 to sdPaT comunication to sdPd bepP to sdPaO engP2 to sdPsE }
 	}
 	component def engineCP { 
 		ports : engP2 : engineActivationIPT [ 1 , 2 ] ; engP1 : dataPortIOPT ; 
 		configuration { 
-			components :     }
+			components :     displayControllerCP : displayControllerCP { using ports : dp2 : firmwareUpdatePortIPT ; dp0 : displayPort ; comunication : dataPortIOPT ; } inginitionBCP : inginitionBCP { using ports : ignP0 : engineAtivationOPT ; } engineShoutDownCP : engineShoutDownCP { using ports : sdPaT : alertPortIPT ; sdPaL : alertPortIPT ; sdPaO : alertPortOPT ; sdPsE : engineAtivationOPT ; sdPd : dataPortIOPT ; } connectors : ec1 : dataConnector bindings comunication = sdPd ; delegations : comunication to engP1 sdPsE to engP2 ignP0 to engP2 }
 	} boundary
 	component def inginitionBCP { 
 		ports : ignP0 : engineAtivationOPT ;  
