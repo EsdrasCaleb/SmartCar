@@ -84,7 +84,7 @@ package scPorts {
 	 port def firmwareUpdatePortIPT { flow in byteStream } connector def connectTemperature { participants : ~ ^out : mortorTempOPT ; ~ ^in : motorTempIPT ; } connector def connectAlerts { participants : ~ ^in : alertPortIPT ; ~ ^out : alertPortOPT ; } connector def conectLiters { participants : ~ ^out : fuelLitersOPT ; ~ ^in : fuelLitersIPT ; } connector def porcentConnect { participants : ~ ^out : bateryLevelOPT ; ~ ^in : bateryLevelIPT ; } connector def actvationConector { participants : ~ ^out : engineAtivationOPT ; ~ ^in : engineActivationIPT ; } connector def noSignalConector { participants : ~ ^out : noSignalAlertOPT ; ~ ^in : noSignalAlertIPT ; } 
  connector def dataConnector { participants : ~ dataP1 : dataPortIOPT ; ~ newPort : dataPortIOPT ; } }
  package scComponents { 
-	import SysADL.types ;  import scPorts ;
+	import SysADL.types ;  import scPorts ; import dataTypes ;
 	component def displayControllerCP { 
 		ports :  
 		dp2 : firmwareUpdatePortIPT ;  
@@ -116,4 +116,13 @@ package scPorts {
 		ports : ignP0 : engineAtivationOPT ;  
 		
 	} 
+activity def checkBateryCriticalLevelAC ( acBateryValue : percent ) : ( acBateryCritical : Boolean ) { body { actions : checkBateryCriticalLevelAN : checkBateryCriticalLevelAN { using pins : anBatteryValue : percent ; } delegate acBateryCritical to checkBateryCriticalLevelAN delegate acBateryValue to anBatteryValue } } action def checkBateryCriticalLevelAN ( anBatteryValue : percent ) : Boolean { constraint : pre-condition batteryLevelLower20EQ } 
+constraint batteryLevelLower20EQ ( level: percent ):(critical:Boolean) { equation = level<20 } 
+activity def chckFuelCriticalLevelAC { body { } } activity def countTimeToShoutDownAC ( bateryLevelAlarm : Boolean ) ( fuelLevelAlarm : Boolean ) ( temperatureAlarm : Boolean ) : ( engineDeActivation : Boolean ) { body { actions : countDownAD : countDownAD { using pins : alarm : Boolean ; timer : Int ; } shoutDownActionAD : shoutDownActionAD { using pins : alarmCounted : Boolean ; timerCounted : Int ; } countDownAD : countDownAD { using pins : alarm : Boolean ; timer : Int ; } countDownAD : countDownAD { using pins : alarm : Boolean ; timer : Int ; } shoutDownActionAD : shoutDownActionAD { using pins : alarmCounted : Boolean ; timerCounted : Int ; } shoutDownActionAD : shoutDownActionAD { using pins : alarmCounted : Boolean ; timerCounted : Int ; } delegate bateryLevelAlarm to alarm flow from countDownAD to timer delegate bateryLevelAlarm to alarmCounted flow from countDownAD to timerCounted delegate engineDeActivation to shoutDownActionAD flow from countDownAD to timer delegate fuelLevelAlarm to alarm delegate temperatureAlarm to alarm flow from countDownAD to timer flow from countDownAD to timerCounted delegate engineDeActivation to shoutDownActionAD delegate fuelLevelAlarm to alarmCounted delegate temperatureAlarm to alarmCounted delegate engineDeActivation to shoutDownActionAD flow from countDownAD to timerCounted } } 
+constraint timerConstraitEQ (alarm:Boolean, timer:Int ):(newtime:Int) { 
+	equation =alarm&&(timer+1)
 } 
+action def countDownAD ( alarm : Boolean , timer : Int ) : Int { constraint : post-condition timerConstraitEQ } action def shoutDownActionAD ( alarmCounted : Boolean , timerCounted : Int ) : Boolean { } 
+constraint shoutDownConstraitEQ ( alaramD : Boolean , timerD : Int ) : ( shoutDown : Boolean ) { 
+	equation =alaramD&&(timerD>120)
+} }
