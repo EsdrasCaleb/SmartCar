@@ -131,4 +131,6 @@ constraint fuelLevelLower2lEQ ( liters : liters ) : ( lowfuel : Boolean ) {
 } 
 constraint motorTemperatureOver100gradEQ ( temp : celciusTemp ) : ( higthTemp : Boolean ) { 
 	equation = temp>100
-} }
+} 
+activity def presentStatusAC ( acEngineTempCritical : Boolean ) ( acEngineTempNoSignal : Boolean ) ( acBateryCritical : Boolean ) : ( acScreenText : String ) { body { } } 
+action def blinkScreenAD ( adEngineTempCritical : Boolean , adBateryCritical : Boolean , adFuelCritical : Boolean ) : Boolean { } }
