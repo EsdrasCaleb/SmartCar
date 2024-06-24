@@ -132,5 +132,34 @@ constraint fuelLevelLower2lEQ ( liters : liters ) : ( lowfuel : Boolean ) {
 constraint motorTemperatureOver100gradEQ ( temp : celciusTemp ) : ( higthTemp : Boolean ) { 
 	equation = temp>100
 } 
-activity def presentStatusAC ( acEngineTempCritical : Boolean ) ( acEngineTempNoSignal : Boolean ) ( acBateryCritical : Boolean ) : ( acScreenText : String ) { body { } } 
-action def blinkScreenAD ( adEngineTempCritical : Boolean , adBateryCritical : Boolean , adFuelCritical : Boolean ) : Boolean { } }
+activity def presentStatusAC ( acEngineTempCritical : Boolean ) 
+( acEngineTempNoSignal : Boolean ) 
+( acEngineTemp: celciusTemp )
+( acBateryCritical : Boolean ) 
+( acBateryValueNoSignal : Boolean )
+( acBateryValue : percent )
+( acFuelCritical : Boolean ) 
+( acFuelValueNoSignal : Boolean )
+( acFuelValue : liters )
+: 
+( acScreenText : String , acBlinkScreen : Boolean ) { 
+	body { 
+		
+	actions : blinkScreenAD : blinkScreenAD { using pins : adEngineTempCritical : Boolean ; adBateryCritical : Boolean ; adFuelCritical : Boolean ; } joinAllStatusAD : joinAllStatusAD { using pins : engineTempOutput : String ; bateryValueOutput : String ; fuelValueOutput : String ; } getEngineTempAD : getEngineTempAD { using pins : noSignalET : Boolean ; criticalET : Boolean ; tempValue : celciusTemp ; } getBateryValueAD : getBateryValueAD { using pins : noSignalB : Boolean ; criticalB : Boolean ; bateryValue : percent ; } getFuelValue : getFuelValue { using pins : noSignalF : Boolean ; criticalF : Boolean ; fuelValue : liters ; } delegate acEngineTempCritical to adEngineTempCritical delegate acBateryCritical to adBateryCritical delegate acFuelCritical to adFuelCritical delegate acBlinkScreen to blinkScreenAD delegate acScreenText to joinAllStatusAD flow from getEngineTempAD to engineTempOutput flow from getBateryValueAD to bateryValueOutput delegate acEngineTempCritical to criticalET delegate acEngineTempNoSignal to noSignalET delegate acEngineTemp to tempValue delegate acBateryCritical to criticalB delegate acBateryValueNoSignal to noSignalB delegate acBateryValue to bateryValue delegate acFuelCritical to criticalF delegate acFuelValueNoSignal to noSignalF delegate acFuelValue to fuelValue }
+} 
+action def blinkScreenAD ( adEngineTempCritical : Boolean , adBateryCritical : Boolean , adFuelCritical : Boolean ) : Boolean { constraint : post-condition blinkEQ } action def joinAllStatusAD ( engineTempOutput : String , bateryValueOutput : String , fuelValueOutput : String ) : String { } action def getEngineTempAD ( noSignalET : Boolean , criticalET : Boolean , tempValue : celciusTemp ) : String { } action def getBateryValueAD ( noSignalB : Boolean , criticalB : Boolean , bateryValue : percent ) : String { } action def getFuelValue ( noSignalF : Boolean , criticalF : Boolean , fuelValue : liters ) : String { } 
+constraint blinkEQ ( eEngineC : Boolean , eBatteryC : Boolean , eFuelC : Boolean ) { 
+	equation = eEngineC || eBatteryC || eFuelC
+} 
+constraint engineTempStringEQ ( nSigET : Boolean , critET : Boolean , valueET : Boolean ) { 
+	equation = (nSigET && "No Signal") || (!nSigET && valueET+"ºC "+(critET &&" CRITICAL!")) 
+} 
+constraint bateryValueStringEQ ( nSigB : Boolean , critB : Boolean , valueB : Boolean ) { 
+	equation = (nSigB && "No Signal") || (!nSigB && valueB+"% "+(critB &&" CRITICAL!")) 
+} 
+constraint fuelValueStringEQ ( nSigF : Boolean , critF : Boolean , valueF : Boolean ) { 
+	equation = (nSigF && "No Signal") || (!nSigF && valueF+"l "+(critF &&" CRITICAL!")) 
+} 
+constraint joinStringsEQ ( stringET : String , stringB : String , stringF : String ) { 
+	equation = stringET+"\n"+stringB+"\n"+stringF
+} }
