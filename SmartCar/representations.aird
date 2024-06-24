@@ -119,7 +119,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='BDD.Behavior']"/>
         <target xmi:type="sysadl:Package" href="SmartCar.sysadl#//@packages[name='scComponents']"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CifzwDHKEe-ZrtBziWy9HA" name="presentStatusDiagram" repPath="#_Cid-kDHKEe-ZrtBziWy9HA" changeId="1719194052227">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CifzwDHKEe-ZrtBziWy9HA" name="presentStatusDiagram" repPath="#_Cid-kDHKEe-ZrtBziWy9HA" changeId="1719194677501">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']"/>
         <target xmi:type="sysadl:ActivityBody" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='presentStatusAC']/@body"/>
       </ownedRepresentationDescriptors>
@@ -20650,6 +20650,22 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d8G-WjHMEe-ZrtBziWy9HA" id="(1.0,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d8G-WzHMEe-ZrtBziWy9HA" id="(0.0,0.5)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_AnuzYDHOEe-ZrtBziWy9HA" type="4001" element="_AngJ6DHOEe-ZrtBziWy9HA" source="_mvvMkDHLEe-ZrtBziWy9HA" target="_1O3lEDHKEe-ZrtBziWy9HA">
+          <children xmi:type="notation:Node" xmi:id="_AnuzZDHOEe-ZrtBziWy9HA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AnuzZTHOEe-ZrtBziWy9HA" x="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AnuzZjHOEe-ZrtBziWy9HA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AnuzZzHOEe-ZrtBziWy9HA" x="26" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_AnuzaDHOEe-ZrtBziWy9HA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AnuzaTHOEe-ZrtBziWy9HA" x="-17" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_AnuzYTHOEe-ZrtBziWy9HA" routing="Rectilinear"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_AnuzYjHOEe-ZrtBziWy9HA" fontName="Noto Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AnuzYzHOEe-ZrtBziWy9HA" points="[3, 5, -37, 215]$[25, 5, -15, 215]$[25, -215, -15, -5]$[38, -215, -2, -5]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AnuzajHOEe-ZrtBziWy9HA" id="(0.7,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_AnuzazHOEe-ZrtBziWy9HA" id="(0.2,1.0)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_CjCmUDHKEe-ZrtBziWy9HA" source="DANNOTATION_CUSTOMIZATION_KEY">
@@ -20817,7 +20833,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@containerMappings[name='ADNew.Self']/@subContainerMappings[name='ADNew.Actions']/@borderedNodeMappings[name='ADNew.Actions.Input']"/>
         </ownedBorderedNodes>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_1OqJtjHKEe-ZrtBziWy9HA" name="fuelValueOutput" width="1" height="1">
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_1OqJtjHKEe-ZrtBziWy9HA" name="fuelValueOutput" incomingEdges="_AngJ6DHOEe-ZrtBziWy9HA" width="1" height="1">
           <target xmi:type="sysadl:Pin" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='presentStatusAC']/@body/@actions[name='joinAllStatusAD']/@pinIn[name='fuelValueOutput']"/>
           <semanticElements xmi:type="sysadl:Pin" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='presentStatusAC']/@body/@actions[name='joinAllStatusAD']/@pinIn[name='fuelValueOutput']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_1OqJtzHKEe-ZrtBziWy9HA" showIcon="false" color="140,140,232">
@@ -20913,7 +20929,7 @@
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_mvqUJTHLEe-ZrtBziWy9HA" name="&lt;&lt;action>>&#xA;getFuelValue : getFuelValue">
         <target xmi:type="sysadl:ActionUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='presentStatusAC']/@body/@actions[name='getFuelValue']"/>
         <semanticElements xmi:type="sysadl:ActionUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='presentStatusAC']/@body/@actions[name='getFuelValue']"/>
-        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_mvq7IjHLEe-ZrtBziWy9HA" name=":String" width="1" height="1">
+        <ownedBorderedNodes xmi:type="diagram:DNode" uid="_mvq7IjHLEe-ZrtBziWy9HA" name=":String" outgoingEdges="_AngJ6DHOEe-ZrtBziWy9HA" width="1" height="1">
           <target xmi:type="sysadl:ActionUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='presentStatusAC']/@body/@actions[name='getFuelValue']"/>
           <semanticElements xmi:type="sysadl:ActionUse" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='presentStatusAC']/@body/@actions[name='getFuelValue']"/>
           <ownedStyle xmi:type="diagram:Square" uid="_mvq7IzHLEe-ZrtBziWy9HA" showIcon="false" color="113,171,203">
@@ -21094,6 +21110,15 @@
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_d8FJITHMEe-ZrtBziWy9HA"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@edgeMappings[name='ADNew.Delegation.In']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_AngJ6DHOEe-ZrtBziWy9HA" sourceNode="_mvq7IjHLEe-ZrtBziWy9HA" targetNode="_1OqJtjHKEe-ZrtBziWy9HA">
+      <target xmi:type="sysadl:ActivityFlow" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='presentStatusAC']/@body/@flows.16"/>
+      <semanticElements xmi:type="sysadl:ActivityFlow" href="SmartCar.sysadl#//@packages[name='scComponents']/@definitions[name='presentStatusAC']/@body/@flows.16"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_AngJ6THOEe-ZrtBziWy9HA" routingStyle="manhattan">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@edgeMappings[name='ADNew.Flows']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_AngJ6jHOEe-ZrtBziWy9HA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']/@defaultLayer/@edgeMappings[name='ADNew.Flows']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.sysadl.viewpoints/description/SysADL_vp.odesign#//@ownedViewpoints[name='SysADL.Behavioral']/@ownedRepresentations[name='SysADL.AD']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_Cid-kTHKEe-ZrtBziWy9HA"/>
