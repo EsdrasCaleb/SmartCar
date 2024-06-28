@@ -167,4 +167,11 @@ constraint noSignalEQ ( measureVal : Real ) : ( signal : Boolean ) {
 	equation = (measureVal == null)? true : false
 } boundary
 	component def engineTempSensor2BCP { ports : tsP0 : mortorTempOPT ; } boundary
-	component def fuelSensor2BCP { ports : fsP0 : fuelLitersOPT ; } activity def getValueFromSensors { body { } } action def getAvgValueIfExists ( sensor1Value : Real , sensonr2Value : Real ) : Real { } constraint avgOrExistingValue ( val1 : Real , val2 : Real ) : ( outVal : Real ) { } } Requirement beConfiableNFR ( 3.5.1 ) { text = "Tenha certeza  dos dados que podem deligar o carro estão corretos" } Requirement beFaultProffNFR ( 3.5.2 ) { text = "Ser capaz de funcionar caso um sensor pare" }
+	component def fuelSensor2BCP { ports : fsP0 : fuelLitersOPT ; } 
+	activity def getValueFromSensors ( inSensor1 : Real ) ( inSensor2 : Real ) : ( outValue : Real ) { body { actions : getAvgValueIfExists : getAvgValueIfExists { using pins : sensor1Value : Real ; sensonr2Value : Real ; } delegate outValue to getAvgValueIfExists delegate inSensor1 to sensor1Value delegate inSensor2 to sensonr2Value } } action def getAvgValueIfExists ( sensor1Value : Real , sensonr2Value : Real ) : Real { constraint : post-condition avgOrExistingValue } 
+	constraint avgOrExistingValue ( val1 : Real , val2 : Real ) : ( outVal : Real ) { 
+			equation = (val1 == null)? val2 : 
+							(val2 == null)? val1:
+								(val1+val2)/2
+	} } 
+	Requirement beConfiableNFR ( 3.5.1 ) { text = "Tenha certeza  dos dados que podem deligar o carro estão corretos" } Requirement beFaultProffNFR ( 3.5.2 ) { text = "Ser capaz de funcionar caso um sensor pare" }
